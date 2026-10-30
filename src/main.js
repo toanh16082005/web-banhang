@@ -1,5 +1,5 @@
 // src/main.js
-import './styles/main.css';
+// Stylesheet is linked directly via <link rel="stylesheet" href="/src/styles/main.css"> in index.html
 import { store } from './store/state.js';
 import { renderNavbar, attachNavbarEvents } from './components/Navbar.js';
 import { renderHeroSection, attachHeroEvents } from './components/HeroSection.js';
