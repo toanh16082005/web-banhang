@@ -1,0 +1,18 @@
+{
+  "name": "aura-stay-resort",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide": "^0.475.0"
+  },
+  "devDependencies": {
+    "docx": "^9.15.0",
+    "vite": "^6.2.0"
+  }
+}
