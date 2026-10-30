@@ -15,7 +15,7 @@ export function renderAdminPortal() {
           <div class="admin-header-info">
             <span class="section-tag" style="color: var(--color-secondary-light); margin-bottom: 4px;">Hệ Thống Quản Trị Khách Sạn & Lễ Tân</span>
             <h2>AURA STAY - Cổng Điều Hành Tập Trung</h2>
-            <p>Trực ban Lễ tân & Quản trị: <strong>Lê Đức Hạnh</strong> • Trạng thái hệ thống: <span style="color: #4ade80;">● Đang kết nối Cloudflare D1</span></p>
+            <p>Trực ban Lễ tân & Quản trị: <strong>Tô Thị Ngọc Ánh</strong> • Trạng thái hệ thống: <span style="color: #4ade80;">● Đang kết nối Cloudflare D1</span></p>
           </div>
 
           <!-- Các Phân Hệ Quản Trị -->
@@ -137,8 +137,8 @@ function renderRoomMatrixTab() {
           <h4 class="floor-title">${fl.title}</h4>
           <div class="room-matrix-grid">
             ${fl.rooms.map(room => {
-              const type = store.roomTypes.find(t => t.id === room.room_type_id);
-              return `
+    const type = store.roomTypes.find(t => t.id === room.room_type_id);
+    return `
                 <div class="matrix-room-cell ${room.status}" data-room-id="${room.id}">
                   <div class="room-cell-top">
                     <span class="room-cell-number">${room.room_number}</span>
@@ -150,7 +150,7 @@ function renderRoomMatrixTab() {
                   </div>
                 </div>
               `;
-            }).join('')}
+  }).join('')}
           </div>
         </div>
       `).join('')}

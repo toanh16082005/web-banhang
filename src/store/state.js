@@ -11,12 +11,12 @@ import {
 } from '../data/seedData.js';
 
 const STORAGE_KEYS = {
-  ROOM_TYPES: 'aura_stay_room_types_v1',
-  PHYSICAL_ROOMS: 'aura_stay_physical_rooms_v1',
-  BOOKINGS: 'aura_stay_bookings_v1',
-  PRICING_RULES: 'aura_stay_pricing_rules_v1',
-  SEARCH: 'aura_stay_search_v1',
-  ROLE: 'aura_stay_active_role_v1'
+  ROOM_TYPES: 'aura_stay_room_types_v2',
+  PHYSICAL_ROOMS: 'aura_stay_physical_rooms_v2',
+  BOOKINGS: 'aura_stay_bookings_v2',
+  PRICING_RULES: 'aura_stay_pricing_rules_v2',
+  SEARCH: 'aura_stay_search_v2',
+  ROLE: 'aura_stay_active_role_v2'
 };
 
 // Khởi tạo ngày mặc định: Hôm nay và Ngày mốt (+2 đêm)
