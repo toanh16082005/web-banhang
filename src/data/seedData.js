@@ -136,25 +136,25 @@ export const SEED_ROOM_TYPES = [
 export const SEED_PHYSICAL_ROOMS = [
   // Tầng 1 - Deluxe Ocean View
   { id: 101, room_number: '101', room_type_id: 1, floor: 1, status: 'clean', guest_name: '' },
-  { id: 102, room_number: '102', room_type_id: 1, floor: 1, status: 'occupied', guest_name: 'Nguyễn Văn Chiến' },
-  { id: 103, room_number: '103', room_type_id: 1, floor: 1, status: 'reserved', guest_name: 'Trần Đình Phú' },
+  { id: 102, room_number: '102', room_type_id: 1, floor: 1, status: 'occupied', guest_name: 'Lê Trần Thu Thảo' },
+  { id: 103, room_number: '103', room_type_id: 1, floor: 1, status: 'reserved', guest_name: 'Dương Thị Lệ' },
   { id: 104, room_number: '104', room_type_id: 1, floor: 1, status: 'dirty', guest_name: '' },
-  
+
   // Tầng 2 - Grand Executive Suite
   { id: 201, room_number: '201', room_type_id: 2, floor: 2, status: 'clean', guest_name: '' },
-  { id: 202, room_number: '202', room_type_id: 2, floor: 2, status: 'occupied', guest_name: 'Phạm Văn Mạnh' },
+  { id: 202, room_number: '202', room_type_id: 2, floor: 2, status: 'occupied', guest_name: 'Nguyễn Hương Giang' },
   { id: 203, room_number: '203', room_type_id: 2, floor: 2, status: 'clean', guest_name: '' },
   { id: 204, room_number: '204', room_type_id: 2, floor: 2, status: 'maintenance', guest_name: '' },
-  
+
   // Khu Biệt Thự Sát Biển (Villas)
-  { id: 301, room_number: 'V01', room_type_id: 3, floor: 0, status: 'occupied', guest_name: 'Cao Xuân Thịnh' },
+  { id: 301, room_number: 'V01', room_type_id: 3, floor: 0, status: 'occupied', guest_name: 'Tạ Thị Hồng' },
   { id: 302, room_number: 'V02', room_type_id: 3, floor: 0, status: 'clean', guest_name: '' },
-  { id: 303, room_number: 'V03', room_type_id: 3, floor: 0, status: 'reserved', guest_name: 'Lê Đức Hạnh' },
-  
+  { id: 303, room_number: 'V03', room_type_id: 3, floor: 0, status: 'reserved', guest_name: 'Nguyễn Quý NHi' },
+
   // Khu Vườn Sinh Thái (Bungalow)
   { id: 401, room_number: 'B01', room_type_id: 5, floor: 0, status: 'clean', guest_name: '' },
   { id: 402, room_number: 'B02', room_type_id: 5, floor: 0, status: 'clean', guest_name: '' },
-  
+
   // Khu Trăng Mật & Penthouse
   { id: 501, room_number: 'H01', room_type_id: 6, floor: 2, status: 'clean', guest_name: '' },
   { id: 601, room_number: 'PH01', room_type_id: 4, floor: 3, status: 'clean', guest_name: '' }
@@ -199,9 +199,9 @@ export const SEED_INITIAL_BOOKINGS = [
   {
     id: 1,
     booking_code: 'AUR-260324-1001',
-    customer_name: 'Nguyễn Văn Chiến',
+    customer_name: 'Lê Trần Thu Thảo',
     customer_phone: '0988123456',
-    customer_email: 'chien.nguyen@gmail.com',
+    customer_email: 'thaolee@gmail.com',
     customer_identity: '001201009876',
     room_type_id: 1,
     room_id: 102,
@@ -221,9 +221,9 @@ export const SEED_INITIAL_BOOKINGS = [
   {
     id: 2,
     booking_code: 'AUR-260324-1002',
-    customer_name: 'Trần Đình Phú',
+    customer_name: 'Nguyễn Quý Nhi',
     customer_phone: '0977889900',
-    customer_email: 'phu.tran@gmail.com',
+    customer_email: 'nhi@gmail.com',
     customer_identity: '001201005544',
     room_type_id: 1,
     room_id: 103,
@@ -243,9 +243,9 @@ export const SEED_INITIAL_BOOKINGS = [
   {
     id: 3,
     booking_code: 'AUR-260324-1003',
-    customer_name: 'Cao Xuân Thịnh',
+    customer_name: 'Tô Thị Ngọc Ánh',
     customer_phone: '0912334455',
-    customer_email: 'thinh.cao@gmail.com',
+    customer_email: 'anh@gmail.com',
     customer_identity: '001201007788',
     room_type_id: 3,
     room_id: 301,
