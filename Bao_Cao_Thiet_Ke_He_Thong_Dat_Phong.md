@@ -14,6 +14,7 @@
   - [1.1 Mục Tiêu](#11-mục-tiêu)
   - [1.2 Phạm Vi](#12-phạm-vi)
   - [1.3 Vai Trò Người Dùng](#13-vai-trò-người-dùng)
+  - [1.4 Mô Hình Phát Triển Trợ Lý Ảo Chatbot (Kiến Trúc RAG - Retrieval-Augmented Generation)](#14-mô-hình-phát-triển-trợ-lý-ảo-chatbot-kiến-trúc-rag---retrieval-augmented-generation)
 - [2. KIẾN TRÚC HỆ THỐNG](#2-kiến-trúc-hệ-thống)
   - [2.1 Sơ Đồ Kiến Trúc Tổng Thể](#21-sơ-đồ-kiến-trúc-tổng-thể)
   - [2.2 Cấu Trúc Dự Án (Frontend / Backend Split)](#22-cấu-trúc-dự-án-frontend--backend-split)
@@ -86,6 +87,87 @@ Hệ thống giải quyết triệt để các bài toán cốt lõi của ngàn
 | **Customer (Khách hàng thành viên)** | - Đăng ký / Đăng nhập tài khoản bảo mật bằng Email/SĐT.<br>- Tự động đồng bộ các booking vãng lai cũ được tạo trước đó có cùng SĐT/Email.<br>- Quản lý thông tin cá nhân, lưu thẻ căn cước/hộ chiếu để rút ngắn thủ tục check-in.<br>- Xem lịch sử đặt phòng, tải hóa đơn điện tử VAT, nhận tích điểm thành viên (Loyalty Points).<br>- Tự hủy hoặc yêu cầu đổi ngày khi đơn đặt phòng đang ở trạng thái `pending` (Chờ xác nhận).<br>- Viết đánh giá, bình luận và xếp hạng sao cho các phòng đã hoàn tất kỳ nghỉ. |
 | **Receptionist / Staff (Lễ tân)** | - Đăng nhập phân quyền Staff.<br>- Xem sơ đồ phòng trực quan (Room Matrix & Gantt Timeline) theo ngày hiện tại và tuần tới.<br>- Thao tác nhanh thủ tục Nhận phòng (Check-in), Trả phòng (Check-out), Chuyển trạng thái dọn dẹp phòng (`Cleaning` / `Inspected`).<br>- Ghi nhận các chi phí phát sinh (Minibar, giặt ủi, bữa ăn tại phòng, phụ thu quá giờ) vào hóa đơn đặt phòng.<br>- Tra cứu nhanh khách sạn theo họ tên, CCCD/Passport hoặc số điện thoại. |
 | **Admin (Quản trị viên hệ thống)** | - Đăng nhập bảo mật HttpOnly Cookie kèm giới hạn tần suất (Rate Limiter).<br>- Xem Dashboard chỉ số kinh doanh: Doanh thu thực tế, Tỷ lệ lấp đầy phòng (Occupancy Rate - ADR, RevPAR), Xu hướng đặt phòng theo biểu đồ 7/30/90 ngày.<br>- Quản lý Hạng phòng & Phòng vật lý (CRUD, bật/tắt, tải nhiều ảnh phòng lên Cloudflare R2).<br>- Thiết lập Bảng giá linh hoạt (Pricing Rules: Phụ thu cuối tuần, giá dịp Lễ/Tết, phụ thu giường phụ/trẻ em).<br>- Quản lý toàn bộ danh sách Booking theo State Machine nghiêm ngặt.<br>- Quản lý khách hàng CRM, mã giảm giá (Coupon), Banner trang chủ và cấu hình hệ thống. |
+
+## 1.4 Mô Hình Phát Triển Trợ Lý Ảo Chatbot (Kiến Trúc RAG - Retrieval-Augmented Generation)
+
+Nhằm đáp ứng yêu cầu nghiệp vụ khắt khe của ngành lưu trú và giải quyết triệt để điểm yếu cố hữu của các mô hình ngôn ngữ lớn (LLMs), hệ thống AURA STAY ứng dụng kiến trúc **RAG (Retrieval-Augmented Generation - Tạo sinh tăng cường truy xuất dữ liệu)** vào module Trợ lý ảo Concierge AI.
+
+### 1.4.1 Yêu Cầu Cốt Lõi (User Story & System Constraints)
+- ⚠️ **Không được bịa đặt (Zero Hallucination)**: Mô hình ngôn ngữ lớn (LLM) tuyệt đối không được tự suy diễn hoặc bịa ra thông tin sai lệch về giá phòng, chính sách hủy phòng hoặc các dịch vụ không có thực.
+- **Chỉ sử dụng dữ liệu hiện có (Strict Context Grounding)**: Chatbot chỉ được phép trả lời dựa trên kho tri thức xác thực do khu nghỉ dưỡng cung cấp (tài liệu nội bộ, thông số phòng ốc, chính sách trẻ em và biểu giá niêm yết).
+- **Vận hành trên hạ tầng Cloudflare Edge (CF)**: Tận dụng mạng lưới biên phân tán của Cloudflare (Cloudflare Workers, Cloudflare Vectorize và Workers AI) giúp phản hồi tức thì với độ trễ cực thấp (< 50ms) và tối ưu hóa 100% chi phí vận hành.
+
+### 1.4.2 Sơ Đồ Quy Trình Vận Hành Kiến Trúc RAG
+
+Hệ thống hoạt động đồng bộ qua hai luồng xử lý độc lập: **Luồng nạp dữ liệu tri thức (Offline Ingestion Pipeline)** và **Luồng truy xuất & sinh phản hồi theo thời gian thực (Online Retrieval Pipeline)**:
+
+```
+[ NGUỒN TRI THỨC NỘI BỘ ]
+(Knowledge: .pdf, .docx, private docs)
+          │
+          ▼
+    [ CHUNKING ] ──► Chia văn bản thành các khối nhỏ (300 - 500 tokens, 50 tokens overlap)
+          │
+          ▼
+ ① [ WORD EMBEDDING ] ──► Chuyển đổi ngữ nghĩa văn bản thành Vector [1024 chiều]
+          │
+          ▼ (Index)
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                    ② DB VECTOR (Cloudflare Vectorize)                 │
+ │            - Lưu trữ các vector tri thức của resort                    │
+ │            - Thuật toán đo khoảng cách ngữ nghĩa: Cosine Similarity    │
+ └──────────────────────────────────┬─────────────────────────────────────┘
+                                    ▲
+                                    │ (Cosine Similarity Search)
+                                    │
+                                    ├──────────────────────────┐
+                                    │ (Truy xuất Top-K)        │
+                                    │                          │
+          [ NGƯỜI DÙNG / KHÁCH ]     │                          ▼
+                    │               │                 ┌─────────────────┐
+                    ▼               │                 │   K PHẦN TỬ     │
+             [ CÂU HỎI USER ] ──────┘                 │ (Top-K Chunks   │
+                    │         (Vector hóa câu hỏi)    │  Ngữ cảnh thật) │
+                    ▼                                 └────────┬────────┘
+                    │                                          │
+                    └───────────────────┬──────────────────────┘
+                                        ▼
+                               ┌─────────────────┐
+                               │     ③ LLM       │ (Google Gemini 2.5 Flash / Llama 3)
+                               │ (Augmented Text)│ Prompt = Ngữ cảnh thật + Câu hỏi
+                               └────────┬────────┘
+                                        ▼
+                               [ CÂU TRẢ LỜI CHÍNH XÁC ]
+                               (100% Theo dữ liệu thật, không bịa đặt)
+```
+
+### 1.4.3 Chi Tiết Các Thành Phần Triển Khai
+
+| Thành Phần Trong Mô Hình | Vai Trò & Cơ Chế Hoạt Động | Công Nghệ Triển Khai Trong Dự Án |
+| :--- | :--- | :--- |
+| **Knowledge (Tài liệu nguồn)** | Tập hợp các văn bản nghiệp vụ: Bảng giá phòng, quy chế nhận/trả phòng, menu ẩm thực, chính sách đón tiễn sân bay, quy định phụ thu trẻ em và thú cưng. | `.pdf`, `.docx`, Markdown & CSDL Quan hệ Cloudflare D1. |
+| **Chunking (Phân đoạn)** | Cắt nhỏ tài liệu thành các khối vừa vặn (300 - 500 từ) kèm khoảng gối đầu 50 từ (overlap) nhằm đảm bảo không bị đứt đoạn ngữ cảnh giữa các câu nối. | Thuật toán Recursive Character Text Splitter. |
+| **① Word Embedding** | Mô hình học sâu biến đổi từng khối văn bản thành vector không gian đa chiều (1024 token/chiều), bảo toàn trọn vẹn ngữ nghĩa toán học của từ ngữ. | Cloudflare Workers AI (`@cf/baai/bge-base-en-v1.5`) / Google Text Embedding. |
+| **② DB Vector (Vector Database)** | Cơ sở dữ liệu chuyên biệt lưu trữ vector và đánh chỉ mục theo không gian đa chiều. Khi nhận vector truy vấn, hệ thống tính toán độ tương đồng góc Cosine (`Cosine Similarity`) để trích xuất ngay lập tức `K phần tử` (Top-K) có điểm tương quan cao nhất. | **Cloudflare Vectorize** (Edge Native, tích hợp trực tiếp với Workers). |
+| **③ LLM (Mô hình Ngôn ngữ)** | Tiếp nhận `Augmented Prompt` bao gồm $K$ đoạn văn bản thật được truy xuất và câu hỏi gốc của khách hàng. LLM chỉ đóng vai trò hành văn, diễn giải mạch lạc và lịch thiệp, bị khóa chặt bởi luật "Không được bịa đặt". | **Google Gemini 2.5 Flash** qua REST API / Cloudflare Workers AI. |
+
+### 1.4.4 Prompt Engineering Chống Bịa Đặt (System Grounding)
+Để bảo đảm chatbot luôn tuân thủ nguyên tắc "Không được bịa - Chỉ sử dụng dữ liệu hiện có", máy chủ nhúng chỉ thị hệ thống nghiêm ngặt vào mỗi phiên hội thoại:
+
+```
+[VAI TRÒ]: Bạn là Trợ lý du lịch ảo Concierge độc quyền của khu nghỉ dưỡng cao cấp AURA STAY.
+[NGUYÊN TẮC BẮT BUỘC]:
+1. CHỈ ĐƯỢC PHÉP trả lời dựa trên [DỮ LIỆU NỘI BỘ] đã được trích xuất dưới đây.
+2. TUYỆT ĐỐI KHÔNG ĐƯỢC BỊA ĐẶT, suy diễn giá cả, dịch vụ hoặc tiện ích ngoài tài liệu.
+3. Nếu [DỮ LIỆU NỘI BỘ] không có câu trả lời, hãy lịch sự từ chối:
+   "Dạ hiện tại em chưa có thông tin chính thức về vấn đề này. Quý khách vui lòng liên hệ hotline lễ tân 0988.xxx.xxx để được hỗ trợ chu đáo nhất ạ."
+
+[DỮ LIỆU NỘI BỘ ĐÃ TRUY XUẤT]:
+{Top-K Chunks từ Cloudflare Vectorize}
+
+[CÂU HỎI CỦA KHÁCH HÀNG]:
+{User Query}
+```
 
 ---
 
