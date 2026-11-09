@@ -1,6 +1,7 @@
 // src/main.js
 // Stylesheet is linked directly via <link rel="stylesheet" href="/src/styles/main.css"> in index.html
 import { store } from './store/state.js';
+import { trackVisitStream } from './services/streamTracker.js';
 import { renderNavbar, attachNavbarEvents } from './components/Navbar.js';
 import { renderHeroSection, attachHeroEvents } from './components/HeroSection.js';
 import { renderRoomCatalog, attachRoomCatalogEvents } from './components/RoomCatalog.js';
@@ -64,3 +65,6 @@ store.subscribe(() => {
 // Khởi chạy ứng dụng lần đầu
 renderApp();
 console.log('🌟 AURA STAY Resort & Hotel Web Application Initialized Successfully!');
+
+// Kích hoạt theo dõi lượt truy cập gửi Stream lên Basin Catalog
+trackVisitStream();

@@ -49,7 +49,7 @@ function renderBookingFormState(room, checkIn, checkOut, adults, children, prici
             <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--color-text-main);">
               Họ Và Tên Khách Hàng *
             </label>
-            <input type="text" id="cust-name" required placeholder="Ví dụ: Nguyễn Văn Chiến" style="width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(11, 19, 43, 0.15); outline: none;" />
+            <input type="text" id="cust-name" required placeholder="Ví dụ: Tô Thị Ngọc Ánh" style="width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(11, 19, 43, 0.15); outline: none;" />
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">

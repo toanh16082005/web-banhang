@@ -1,4 +1,5 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))i(r);new MutationObserver(r=>{for(const a of r)if(a.type==="childList")for(const s of a.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function e(r){const a={};return r.integrity&&(a.integrity=r.integrity),r.referrerPolicy&&(a.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?a.credentials="include":r.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(r){if(r.ep)return;r.ep=!0;const a=e(r);fetch(r.href,a)}})();const L=[{id:1,name:"Deluxe Ocean View",slug:"deluxe-ocean-view",base_price:185e4,max_adults:2,max_children:1,area_sqm:38,bed_type:"1 Giường đôi King size",short_description:"Ban công riêng ngắm toàn cảnh biển hoàng hôn, bồn tắm nằm đá tự nhiên và trà thảo mộc thượng hạng.",description:"Căn phòng Deluxe Ocean View tại AURA STAY mang lại cho bạn không gian tĩnh tại với tầm nhìn bao quát toàn bộ vịnh biển. Thiết kế lấy cảm hứng từ kiến trúc Đông Dương đương đại kết hợp tiện nghi tiêu chuẩn 5 sao quốc tế.",thumbnail_url:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80"],tags:["View Biển","Bữa Sáng Miễn Phí","Bán Chạy Nhất"],rating_avg:4.9,reviews_count:128,is_featured:1},{id:2,name:"Grand Executive Suite",slug:"grand-executive-suite",base_price:295e4,max_adults:2,max_children:2,area_sqm:65,bed_type:"1 Giường King + Sofa bed cao cấp",short_description:"Phòng khách biệt lập, bồn sục Jacuzzi ngoài trời, đặc quyền thưởng thức rượu vang chiều tại Club Lounge.",description:"Dành riêng cho những vị khách tìm kiếm sự sang trọng và tiện nghi đỉnh cao. Grand Executive Suite bao gồm khu vực tiếp khách rộng rãi, bàn làm việc sang trọng và ban công kính mở ra tầm nhìn biển 180 độ.",thumbnail_url:"https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=80"],tags:["Bồn Sục Jacuzzi","Đặc Quyền Lounge","View Biển Trọn Vẹn"],rating_avg:5,reviews_count:94,is_featured:1},{id:3,name:"Beachfront Private Pool Villa",slug:"beachfront-private-pool-villa",base_price:56e5,max_adults:4,max_children:2,area_sqm:145,bed_type:"2 Giường King lớn riêng biệt",short_description:"Biệt thự sát biển với hồ bơi vô cực riêng, sân tắm nắng riêng tư và lối đi thẳng ra bờ cát trắng mịn.",description:"Trải nghiệm đỉnh cao của sự tự do và riêng tư tuyệt đối tại Beachfront Private Pool Villa. Nằm ngay sát bờ biển, bạn có thể lắng nghe tiếng sóng vỗ rì rào ngay từ giường ngủ và đắm mình trong làn nước trong vắt của hồ bơi riêng.",thumbnail_url:"https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"],tags:["Hồ Bơi Riêng","Sát Bờ Biển","Lý Tưởng Cho Gia Đình"],rating_avg:5,reviews_count:67,is_featured:1},{id:4,name:"Presidential Sunset Penthouse",slug:"presidential-sunset-penthouse",base_price:89e5,max_adults:6,max_children:3,area_sqm:210,bed_type:"3 Phòng ngủ Master Suite",short_description:"Tọa lạc trên đỉnh tháp với góc nhìn hoàng hôn 360 độ, quầy bar cá nhân, phòng chiếu phim và quản gia 24/7.",description:"Biểu tượng của quyền uy và đẳng cấp thượng lưu. Penthouse là kiệt tác kiến trúc sở hữu tầm nhìn không giới hạn ra toàn cảnh biển đảo, trang bị đầy đủ quầy bar xa xỉ, phòng spa trị liệu riêng và dịch vụ quản gia cao cấp.",thumbnail_url:"https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1000&q=80"],tags:["Đẳng Cấp Thượng Lưu","Quản Gia Riêng 24/7","View 360°"],rating_avg:5,reviews_count:32,is_featured:0},{id:5,name:"Zen Tropical Garden Bungalow",slug:"zen-tropical-garden-bungalow",base_price:145e4,max_adults:2,max_children:1,area_sqm:42,bed_type:"1 Giường Queen hoặc 2 Giường đơn",short_description:"Nép mình giữa vườn dừa và hoa sứ ngát hương, hiên thư giãn đọc sách và phòng tắm mở hòa mình vào thiên nhiên.",description:"Dành cho những tâm hồn yêu thiên nhiên mộc mạc và sự an yên tuyệt đối. Bungalow được bao quanh bởi thảm thực vật xanh mướt, vật liệu gỗ và tre tự nhiên tạo cảm giác thư thái, phục hồi năng lượng.",thumbnail_url:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1000&q=80"],tags:["Vườn Nhiệt Đới","Yên Tĩnh","Gần Gũi Thiên Nhiên"],rating_avg:4.8,reviews_count:85,is_featured:0},{id:6,name:"Honeymoon Romantic Haven",slug:"honeymoon-romantic-haven",base_price:24e5,max_adults:2,max_children:0,area_sqm:52,bed_type:"1 Giường đôi lãng mạn vòm voan trắng",short_description:"Setup hoa tươi, sâm banh ướp lạnh, bữa tối ánh nến bên ban công ngắm sao trời và biển đêm lãng mạn.",description:"Thiết kế riêng cho các cặp đôi tận hưởng kỳ trăng mật hay kỷ niệm ngày cưới. Không gian ấm cúng, lung linh ánh nến cùng những dịch vụ chăm sóc ngọt ngào khó quên.",thumbnail_url:"https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"],tags:["Tuần Trăng Mật","Bữa Tối Ánh Nến","Quà Tặng Tình Yêu"],rating_avg:4.9,reviews_count:76,is_featured:1}],G=[{id:101,room_number:"101",room_type_id:1,floor:1,status:"clean",guest_name:""},{id:102,room_number:"102",room_type_id:1,floor:1,status:"occupied",guest_name:"Lê Trần Thu Thảo"},{id:103,room_number:"103",room_type_id:1,floor:1,status:"reserved",guest_name:"Dương Thị Lệ"},{id:104,room_number:"104",room_type_id:1,floor:1,status:"dirty",guest_name:""},{id:201,room_number:"201",room_type_id:2,floor:2,status:"clean",guest_name:""},{id:202,room_number:"202",room_type_id:2,floor:2,status:"occupied",guest_name:"Nguyễn Hương Giang"},{id:203,room_number:"203",room_type_id:2,floor:2,status:"clean",guest_name:""},{id:204,room_number:"204",room_type_id:2,floor:2,status:"maintenance",guest_name:""},{id:301,room_number:"V01",room_type_id:3,floor:0,status:"occupied",guest_name:"Tạ Thị Hồng"},{id:302,room_number:"V02",room_type_id:3,floor:0,status:"clean",guest_name:""},{id:303,room_number:"V03",room_type_id:3,floor:0,status:"reserved",guest_name:"Nguyễn Quý NHi"},{id:401,room_number:"B01",room_type_id:5,floor:0,status:"clean",guest_name:""},{id:402,room_number:"B02",room_type_id:5,floor:0,status:"clean",guest_name:""},{id:501,room_number:"H01",room_type_id:6,floor:2,status:"clean",guest_name:""},{id:601,room_number:"PH01",room_type_id:4,floor:3,status:"clean",guest_name:""}],K=[{id:1,name:"Phụ Thu Cuối Tuần (Thứ 6, Thứ 7)",multiplier:1.15,extra_fixed:0,applies_to:"weekend",is_active:!0},{id:2,name:"Ưu Đãi Đặt Sớm (Trước 14 Ngày)",multiplier:.9,extra_fixed:0,applies_to:"early_bird",is_active:!0}],O=[{code:"AURASTAY2026",discount_percent:10,label:"Giảm 10% Cho Thành Viên Mới"},{code:"LUXURY500K",discount_fixed:5e5,label:"Giảm 500.000₫ Cho Đơn Từ 4 Triệu"}],V=[{id:1,booking_code:"AUR-260324-1001",customer_name:"Lê Trần Thu Thảo",customer_phone:"0988123456",customer_email:"thaolee@gmail.com",customer_identity:"001201009876",room_type_id:1,room_id:102,room_number:"102",check_in_date:"2026-03-24",check_out_date:"2026-03-27",total_nights:3,adults:2,children:1,total_amount:555e4,payment_method:"BANK_TRANSFER_QR",payment_status:"paid",status:"checked_in",special_requests:"Chuẩn bị thêm gối lông vũ cho trẻ em",created_at:"2026-03-20 09:30:00"},{id:2,booking_code:"AUR-260324-1002",customer_name:"Nguyễn Quý Nhi",customer_phone:"0977889900",customer_email:"nhi@gmail.com",customer_identity:"001201005544",room_type_id:1,room_id:103,room_number:"103",check_in_date:"2026-03-26",check_out_date:"2026-03-28",total_nights:2,adults:2,children:0,total_amount:37e5,payment_method:"PAY_AT_CHECKIN",payment_status:"unpaid",status:"confirmed",special_requests:"Phòng tầng yên tĩnh",created_at:"2026-03-22 14:15:00"},{id:3,booking_code:"AUR-260324-1003",customer_name:"Tô Thị Ngọc Ánh",customer_phone:"0912334455",customer_email:"anh@gmail.com",customer_identity:"001201007788",room_type_id:3,room_id:301,room_number:"V01",check_in_date:"2026-03-23",check_out_date:"2026-03-26",total_nights:3,adults:4,children:2,total_amount:168e5,payment_method:"BANK_TRANSFER_QR",payment_status:"paid",status:"checked_in",special_requests:"Setup tiệc nướng BBQ bãi biển tối ngày thứ 2",created_at:"2026-03-18 11:00:00"}],v={ROOM_TYPES:"aura_stay_room_types_v2",PHYSICAL_ROOMS:"aura_stay_physical_rooms_v2",BOOKINGS:"aura_stay_bookings_v2",PRICING_RULES:"aura_stay_pricing_rules_v2",ROLE:"aura_stay_active_role_v2"};function U(){const n=new Date,t=new Date(n);t.setDate(n.getDate()+1);const e=new Date(n);e.setDate(n.getDate()+3);const i=r=>r.toISOString().split("T")[0];return{checkIn:i(t),checkOut:i(e)}}class Q{constructor(){this.listeners=[],this.loadState()}loadState(){const t=localStorage.getItem(v.ROOM_TYPES);this.roomTypes=t?JSON.parse(t):L;const e=localStorage.getItem(v.PHYSICAL_ROOMS);this.rooms=e?JSON.parse(e):G;const i=localStorage.getItem(v.BOOKINGS);this.bookings=i?JSON.parse(i):V;const r=localStorage.getItem(v.PRICING_RULES);this.pricingRules=r?JSON.parse(r):K;const a=U();this.searchParams={checkIn:a.checkIn,checkOut:a.checkOut,adults:2,children:0,categoryFilter:"all",sortBy:"featured"},this.activeRole=localStorage.getItem(v.ROLE)||"guest",this.adminSubTab="matrix",this.activeModal=null,this.selectedRoomType=null,this.selectedPhysicalRoom=null,this.saveState()}saveState(){localStorage.setItem(v.ROOM_TYPES,JSON.stringify(this.roomTypes)),localStorage.setItem(v.PHYSICAL_ROOMS,JSON.stringify(this.rooms)),localStorage.setItem(v.BOOKINGS,JSON.stringify(this.bookings)),localStorage.setItem(v.ROLE,this.activeRole)}subscribe(t){return this.listeners.push(t),()=>{this.listeners=this.listeners.filter(e=>e!==t)}}notify(){this.saveState(),this.listeners.forEach(t=>t(this))}setRole(t){this.activeRole=t,this.notify()}setAdminSubTab(t){this.adminSubTab=t,this.notify()}setSearchParams(t){this.searchParams={...this.searchParams,...t},this.notify()}openModal(t,e=null){this.activeModal=t,t==="roomDetail"||t==="booking"?this.selectedRoomType=e:t==="roomAction"&&(this.selectedPhysicalRoom=e),this.notify()}closeModal(){this.activeModal=null,this.selectedRoomType=null,this.selectedPhysicalRoom=null,this.notify()}calculateNights(t,e){const i=new Date(t),r=new Date(e),a=Math.abs(r-i),s=Math.ceil(a/(1e3*60*60*24));return s>0?s:1}formatPrice(t){return new Intl.NumberFormat("vi-VN",{style:"currency",currency:"VND"}).format(t)}calculatePriceBreakdown(t,e,i,r=""){const a=new Date(e),s=this.calculateNights(e,i);let c=[],l=0,h=new Date(a);for(let m=0;m<s;m++){const _=h.getDay(),R=_===5||_===6;let B=t.base_price,S=1,C="Ngày trong tuần";R&&(S=1.15,B=Math.round(t.base_price*S),C="Phụ thu cuối tuần (+15%)"),l+=B,c.push({date:h.toISOString().split("T")[0],rate:B,note:C}),h.setDate(h.getDate()+1)}let u=0,p="";const d=O.find(m=>m.code.toUpperCase()===(r||"").trim().toUpperCase());d&&(d.discount_percent?(u=Math.round(l*d.discount_percent/100),p=d.label):d.discount_fixed&&l>=4e6&&(u=d.discount_fixed,p=d.label));const f=Math.round(l*.05),k=Math.max(0,l+f-u);return{totalNights:s,nightlyDetails:c,subtotal:l,discount:u,promoLabel:p,serviceFee:f,finalTotal:k}}getAvailableRoomsForType(t,e,i){return this.rooms.filter(s=>s.room_type_id===t&&s.status!=="maintenance").filter(s=>!this.bookings.some(l=>l.status==="cancelled"||l.status==="checked_out"||l.room_id!==s.id?!1:l.check_in_date<i&&l.check_out_date>e))}createBooking(t){const{roomTypeId:e,checkIn:i,checkOut:r,customerName:a,customerPhone:s,customerEmail:c,customerIdentity:l,specialRequests:h,paymentMethod:u,promoCode:p}=t,d=this.roomTypes.find(A=>A.id===Number(e));if(!d)throw new Error("Hạng phòng không tồn tại");const f=this.getAvailableRoomsForType(d.id,i,r);if(f.length===0)throw new Error(`Rất tiếc! Hạng phòng ${d.name} đã hết phòng trống trong khoảng thời gian từ ${i} đến ${r}. Vui lòng chọn ngày khác hoặc hạng phòng khác.`);const k=f[0],m=this.calculatePriceBreakdown(d,i,r,p),_=new Date,R=String(_.getFullYear()).slice(-2),B=String(_.getMonth()+1).padStart(2,"0"),S=String(_.getDate()).padStart(2,"0"),C=Math.floor(1e3+Math.random()*9e3),z=`AUR-${R}${B}${S}-${C}`,I={id:Date.now(),booking_code:z,idempotency_key:crypto.randomUUID?crypto.randomUUID():`idemp-${Date.now()}`,customer_name:a,customer_phone:s,customer_email:c,customer_identity:l||"",room_type_id:d.id,room_type_name:d.name,room_id:k.id,room_number:k.room_number,check_in_date:i,check_out_date:r,total_nights:m.totalNights,adults:Number(this.searchParams.adults)||2,children:Number(this.searchParams.children)||0,subtotal_price:m.subtotal,service_fee:m.serviceFee,discount_amount:m.discount,total_amount:m.finalTotal,payment_method:u||"PAY_AT_CHECKIN",payment_status:u==="BANK_TRANSFER_QR"?"paid":"unpaid",status:"confirmed",special_requests:h||"",created_at:new Date().toLocaleString("vi-VN")},P=this.rooms.findIndex(A=>A.id===k.id);return P!==-1&&(this.rooms[P].status="reserved",this.rooms[P].guest_name=a),this.bookings.unshift(I),this.notify(),I}updateBookingStatus(t,e){const i=this.bookings.find(a=>a.id===Number(t));if(!i)return;i.status=e;const r=this.rooms.find(a=>a.id===i.room_id);r&&(e==="checked_in"?(r.status="occupied",r.guest_name=i.customer_name):e==="checked_out"?(r.status="dirty",r.guest_name=""):e==="cancelled"&&(r.status="clean",r.guest_name="")),this.notify()}updatePhysicalRoomStatus(t,e){const i=this.rooms.find(r=>r.id===Number(t));i&&(i.status=e,e==="clean"&&(i.guest_name=""),this.notify())}lookupBooking(t){if(!t)return[];const e=t.trim().toUpperCase();return this.bookings.filter(i=>i.booking_code.toUpperCase().includes(e)||i.customer_phone.includes(t.trim()))}cancelBooking(t,e="Khách yêu cầu hủy"){const i=this.bookings.find(a=>a.booking_code.toUpperCase()===t.toUpperCase());if(!i)throw new Error("Không tìm thấy mã đặt phòng");if(i.status==="checked_in"||i.status==="checked_out")throw new Error("Đơn đặt phòng đang lưu trú hoặc đã hoàn tất không thể hủy.");i.status="cancelled",i.cancel_reason=e;const r=this.rooms.find(a=>a.id===i.room_id);return r&&r.status!=="occupied"&&(r.status="clean",r.guest_name=""),this.notify(),i}getDashboardKPIs(){const t=this.bookings.filter(l=>l.status!=="cancelled"&&(l.payment_status==="paid"||l.status==="checked_in"||l.status==="checked_out")).reduce((l,h)=>l+h.total_amount,0),e=this.rooms.length,i=this.rooms.filter(l=>l.status==="occupied").length,r=this.rooms.filter(l=>l.status==="reserved").length,a=this.rooms.filter(l=>l.status==="clean").length,s=this.rooms.filter(l=>l.status==="dirty").length,c=Math.round((i+r)/e*100);return{totalRevenue:t,occupancyRate:c,totalRooms:e,occupiedRooms:i,reservedRooms:r,cleanRooms:a,dirtyRooms:s,totalBookings:this.bookings.length}}}const o=new Q;function Y(){return`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))o(a);new MutationObserver(a=>{for(const r of a)if(r.type==="childList")for(const s of r.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function e(a){const r={};return a.integrity&&(r.integrity=a.integrity),a.referrerPolicy&&(r.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?r.credentials="include":a.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function o(a){if(a.ep)return;a.ep=!0;const r=e(a);fetch(a.href,r)}})();const L=[{id:1,name:"Deluxe Ocean View",slug:"deluxe-ocean-view",base_price:185e4,max_adults:2,max_children:1,area_sqm:38,bed_type:"1 Giường đôi King size",short_description:"Ban công riêng ngắm toàn cảnh biển hoàng hôn, bồn tắm nằm đá tự nhiên và trà thảo mộc thượng hạng.",description:"Căn phòng Deluxe Ocean View tại AURA STAY mang lại cho bạn không gian tĩnh tại với tầm nhìn bao quát toàn bộ vịnh biển. Thiết kế lấy cảm hứng từ kiến trúc Đông Dương đương đại kết hợp tiện nghi tiêu chuẩn 5 sao quốc tế.",thumbnail_url:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80"],tags:["View Biển","Bữa Sáng Miễn Phí","Bán Chạy Nhất"],rating_avg:4.9,reviews_count:128,is_featured:1},{id:2,name:"Grand Executive Suite",slug:"grand-executive-suite",base_price:295e4,max_adults:2,max_children:2,area_sqm:65,bed_type:"1 Giường King + Sofa bed cao cấp",short_description:"Phòng khách biệt lập, bồn sục Jacuzzi ngoài trời, đặc quyền thưởng thức rượu vang chiều tại Club Lounge.",description:"Dành riêng cho những vị khách tìm kiếm sự sang trọng và tiện nghi đỉnh cao. Grand Executive Suite bao gồm khu vực tiếp khách rộng rãi, bàn làm việc sang trọng và ban công kính mở ra tầm nhìn biển 180 độ.",thumbnail_url:"https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=80"],tags:["Bồn Sục Jacuzzi","Đặc Quyền Lounge","View Biển Trọn Vẹn"],rating_avg:5,reviews_count:94,is_featured:1},{id:3,name:"Beachfront Private Pool Villa",slug:"beachfront-private-pool-villa",base_price:56e5,max_adults:4,max_children:2,area_sqm:145,bed_type:"2 Giường King lớn riêng biệt",short_description:"Biệt thự sát biển với hồ bơi vô cực riêng, sân tắm nắng riêng tư và lối đi thẳng ra bờ cát trắng mịn.",description:"Trải nghiệm đỉnh cao của sự tự do và riêng tư tuyệt đối tại Beachfront Private Pool Villa. Nằm ngay sát bờ biển, bạn có thể lắng nghe tiếng sóng vỗ rì rào ngay từ giường ngủ và đắm mình trong làn nước trong vắt của hồ bơi riêng.",thumbnail_url:"https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"],tags:["Hồ Bơi Riêng","Sát Bờ Biển","Lý Tưởng Cho Gia Đình"],rating_avg:5,reviews_count:67,is_featured:1},{id:4,name:"Presidential Sunset Penthouse",slug:"presidential-sunset-penthouse",base_price:89e5,max_adults:6,max_children:3,area_sqm:210,bed_type:"3 Phòng ngủ Master Suite",short_description:"Tọa lạc trên đỉnh tháp với góc nhìn hoàng hôn 360 độ, quầy bar cá nhân, phòng chiếu phim và quản gia 24/7.",description:"Biểu tượng của quyền uy và đẳng cấp thượng lưu. Penthouse là kiệt tác kiến trúc sở hữu tầm nhìn không giới hạn ra toàn cảnh biển đảo, trang bị đầy đủ quầy bar xa xỉ, phòng spa trị liệu riêng và dịch vụ quản gia cao cấp.",thumbnail_url:"https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1000&q=80"],tags:["Đẳng Cấp Thượng Lưu","Quản Gia Riêng 24/7","View 360°"],rating_avg:5,reviews_count:32,is_featured:0},{id:5,name:"Zen Tropical Garden Bungalow",slug:"zen-tropical-garden-bungalow",base_price:145e4,max_adults:2,max_children:1,area_sqm:42,bed_type:"1 Giường Queen hoặc 2 Giường đơn",short_description:"Nép mình giữa vườn dừa và hoa sứ ngát hương, hiên thư giãn đọc sách và phòng tắm mở hòa mình vào thiên nhiên.",description:"Dành cho những tâm hồn yêu thiên nhiên mộc mạc và sự an yên tuyệt đối. Bungalow được bao quanh bởi thảm thực vật xanh mướt, vật liệu gỗ và tre tự nhiên tạo cảm giác thư thái, phục hồi năng lượng.",thumbnail_url:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1000&q=80"],tags:["Vườn Nhiệt Đới","Yên Tĩnh","Gần Gũi Thiên Nhiên"],rating_avg:4.8,reviews_count:85,is_featured:0},{id:6,name:"Honeymoon Romantic Haven",slug:"honeymoon-romantic-haven",base_price:24e5,max_adults:2,max_children:0,area_sqm:52,bed_type:"1 Giường đôi lãng mạn vòm voan trắng",short_description:"Setup hoa tươi, sâm banh ướp lạnh, bữa tối ánh nến bên ban công ngắm sao trời và biển đêm lãng mạn.",description:"Thiết kế riêng cho các cặp đôi tận hưởng kỳ trăng mật hay kỷ niệm ngày cưới. Không gian ấm cúng, lung linh ánh nến cùng những dịch vụ chăm sóc ngọt ngào khó quên.",thumbnail_url:"https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80",gallery:["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80","https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"],tags:["Tuần Trăng Mật","Bữa Tối Ánh Nến","Quà Tặng Tình Yêu"],rating_avg:4.9,reviews_count:76,is_featured:1}],O=[{id:101,room_number:"101",room_type_id:1,floor:1,status:"clean",guest_name:""},{id:102,room_number:"102",room_type_id:1,floor:1,status:"occupied",guest_name:"Lê Trần Thu Thảo"},{id:103,room_number:"103",room_type_id:1,floor:1,status:"reserved",guest_name:"Dương Thị Lệ"},{id:104,room_number:"104",room_type_id:1,floor:1,status:"dirty",guest_name:""},{id:201,room_number:"201",room_type_id:2,floor:2,status:"clean",guest_name:""},{id:202,room_number:"202",room_type_id:2,floor:2,status:"occupied",guest_name:"Nguyễn Hương Giang"},{id:203,room_number:"203",room_type_id:2,floor:2,status:"clean",guest_name:""},{id:204,room_number:"204",room_type_id:2,floor:2,status:"maintenance",guest_name:""},{id:301,room_number:"V01",room_type_id:3,floor:0,status:"occupied",guest_name:"Tạ Thị Hồng"},{id:302,room_number:"V02",room_type_id:3,floor:0,status:"clean",guest_name:""},{id:303,room_number:"V03",room_type_id:3,floor:0,status:"reserved",guest_name:"Nguyễn Quý NHi"},{id:401,room_number:"B01",room_type_id:5,floor:0,status:"clean",guest_name:""},{id:402,room_number:"B02",room_type_id:5,floor:0,status:"clean",guest_name:""},{id:501,room_number:"H01",room_type_id:6,floor:2,status:"clean",guest_name:""},{id:601,room_number:"PH01",room_type_id:4,floor:3,status:"clean",guest_name:""}],G=[{id:1,name:"Phụ Thu Cuối Tuần (Thứ 6, Thứ 7)",multiplier:1.15,extra_fixed:0,applies_to:"weekend",is_active:!0},{id:2,name:"Ưu Đãi Đặt Sớm (Trước 14 Ngày)",multiplier:.9,extra_fixed:0,applies_to:"early_bird",is_active:!0}],K=[{code:"AURASTAY2026",discount_percent:10,label:"Giảm 10% Cho Thành Viên Mới"},{code:"LUXURY500K",discount_fixed:5e5,label:"Giảm 500.000₫ Cho Đơn Từ 4 Triệu"}],U=[{id:1,booking_code:"AUR-260324-1001",customer_name:"Lê Trần Thu Thảo",customer_phone:"0988123456",customer_email:"thaolee@gmail.com",customer_identity:"001201009876",room_type_id:1,room_id:102,room_number:"102",check_in_date:"2026-03-24",check_out_date:"2026-03-27",total_nights:3,adults:2,children:1,total_amount:555e4,payment_method:"BANK_TRANSFER_QR",payment_status:"paid",status:"checked_in",special_requests:"Chuẩn bị thêm gối lông vũ cho trẻ em",created_at:"2026-03-20 09:30:00"},{id:2,booking_code:"AUR-260324-1002",customer_name:"Nguyễn Quý Nhi",customer_phone:"0977889900",customer_email:"nhi@gmail.com",customer_identity:"001201005544",room_type_id:1,room_id:103,room_number:"103",check_in_date:"2026-03-26",check_out_date:"2026-03-28",total_nights:2,adults:2,children:0,total_amount:37e5,payment_method:"PAY_AT_CHECKIN",payment_status:"unpaid",status:"confirmed",special_requests:"Phòng tầng yên tĩnh",created_at:"2026-03-22 14:15:00"},{id:3,booking_code:"AUR-260324-1003",customer_name:"Tô Thị Ngọc Ánh",customer_phone:"0912334455",customer_email:"anh@gmail.com",customer_identity:"001201007788",room_type_id:3,room_id:301,room_number:"V01",check_in_date:"2026-03-23",check_out_date:"2026-03-26",total_nights:3,adults:4,children:2,total_amount:168e5,payment_method:"BANK_TRANSFER_QR",payment_status:"paid",status:"checked_in",special_requests:"Setup tiệc nướng BBQ bãi biển tối ngày thứ 2",created_at:"2026-03-18 11:00:00"}],v={ROOM_TYPES:"aura_stay_room_types_v2",PHYSICAL_ROOMS:"aura_stay_physical_rooms_v2",BOOKINGS:"aura_stay_bookings_v2",PRICING_RULES:"aura_stay_pricing_rules_v2",ROLE:"aura_stay_active_role_v2"};function V(){const n=new Date,t=new Date(n);t.setDate(n.getDate()+1);const e=new Date(n);e.setDate(n.getDate()+3);const o=a=>a.toISOString().split("T")[0];return{checkIn:o(t),checkOut:o(e)}}class Q{constructor(){this.listeners=[],this.loadState()}loadState(){const t=localStorage.getItem(v.ROOM_TYPES);this.roomTypes=t?JSON.parse(t):L;const e=localStorage.getItem(v.PHYSICAL_ROOMS);this.rooms=e?JSON.parse(e):O;const o=localStorage.getItem(v.BOOKINGS);this.bookings=o?JSON.parse(o):U;const a=localStorage.getItem(v.PRICING_RULES);this.pricingRules=a?JSON.parse(a):G;const r=V();this.searchParams={checkIn:r.checkIn,checkOut:r.checkOut,adults:2,children:0,categoryFilter:"all",sortBy:"featured"},this.activeRole=localStorage.getItem(v.ROLE)||"guest",this.adminSubTab="matrix",this.activeModal=null,this.selectedRoomType=null,this.selectedPhysicalRoom=null,this.saveState()}saveState(){localStorage.setItem(v.ROOM_TYPES,JSON.stringify(this.roomTypes)),localStorage.setItem(v.PHYSICAL_ROOMS,JSON.stringify(this.rooms)),localStorage.setItem(v.BOOKINGS,JSON.stringify(this.bookings)),localStorage.setItem(v.ROLE,this.activeRole)}subscribe(t){return this.listeners.push(t),()=>{this.listeners=this.listeners.filter(e=>e!==t)}}notify(){this.saveState(),this.listeners.forEach(t=>t(this))}setRole(t){this.activeRole=t,this.notify()}setAdminSubTab(t){this.adminSubTab=t,this.notify()}setSearchParams(t){this.searchParams={...this.searchParams,...t},this.notify()}openModal(t,e=null){this.activeModal=t,t==="roomDetail"||t==="booking"?this.selectedRoomType=e:t==="roomAction"&&(this.selectedPhysicalRoom=e),this.notify()}closeModal(){this.activeModal=null,this.selectedRoomType=null,this.selectedPhysicalRoom=null,this.notify()}calculateNights(t,e){const o=new Date(t),a=new Date(e),r=Math.abs(a-o),s=Math.ceil(r/(1e3*60*60*24));return s>0?s:1}formatPrice(t){return new Intl.NumberFormat("vi-VN",{style:"currency",currency:"VND"}).format(t)}calculatePriceBreakdown(t,e,o,a=""){const r=new Date(e),s=this.calculateNights(e,o);let c=[],l=0,h=new Date(r);for(let m=0;m<s;m++){const _=h.getDay(),R=_===5||_===6;let B=t.base_price,S=1,C="Ngày trong tuần";R&&(S=1.15,B=Math.round(t.base_price*S),C="Phụ thu cuối tuần (+15%)"),l+=B,c.push({date:h.toISOString().split("T")[0],rate:B,note:C}),h.setDate(h.getDate()+1)}let u=0,p="";const d=K.find(m=>m.code.toUpperCase()===(a||"").trim().toUpperCase());d&&(d.discount_percent?(u=Math.round(l*d.discount_percent/100),p=d.label):d.discount_fixed&&l>=4e6&&(u=d.discount_fixed,p=d.label));const f=Math.round(l*.05),k=Math.max(0,l+f-u);return{totalNights:s,nightlyDetails:c,subtotal:l,discount:u,promoLabel:p,serviceFee:f,finalTotal:k}}getAvailableRoomsForType(t,e,o){return this.rooms.filter(s=>s.room_type_id===t&&s.status!=="maintenance").filter(s=>!this.bookings.some(l=>l.status==="cancelled"||l.status==="checked_out"||l.room_id!==s.id?!1:l.check_in_date<o&&l.check_out_date>e))}createBooking(t){const{roomTypeId:e,checkIn:o,checkOut:a,customerName:r,customerPhone:s,customerEmail:c,customerIdentity:l,specialRequests:h,paymentMethod:u,promoCode:p}=t,d=this.roomTypes.find(A=>A.id===Number(e));if(!d)throw new Error("Hạng phòng không tồn tại");const f=this.getAvailableRoomsForType(d.id,o,a);if(f.length===0)throw new Error(`Rất tiếc! Hạng phòng ${d.name} đã hết phòng trống trong khoảng thời gian từ ${o} đến ${a}. Vui lòng chọn ngày khác hoặc hạng phòng khác.`);const k=f[0],m=this.calculatePriceBreakdown(d,o,a,p),_=new Date,R=String(_.getFullYear()).slice(-2),B=String(_.getMonth()+1).padStart(2,"0"),S=String(_.getDate()).padStart(2,"0"),C=Math.floor(1e3+Math.random()*9e3),z=`AUR-${R}${B}${S}-${C}`,E={id:Date.now(),booking_code:z,idempotency_key:crypto.randomUUID?crypto.randomUUID():`idemp-${Date.now()}`,customer_name:r,customer_phone:s,customer_email:c,customer_identity:l||"",room_type_id:d.id,room_type_name:d.name,room_id:k.id,room_number:k.room_number,check_in_date:o,check_out_date:a,total_nights:m.totalNights,adults:Number(this.searchParams.adults)||2,children:Number(this.searchParams.children)||0,subtotal_price:m.subtotal,service_fee:m.serviceFee,discount_amount:m.discount,total_amount:m.finalTotal,payment_method:u||"PAY_AT_CHECKIN",payment_status:u==="BANK_TRANSFER_QR"?"paid":"unpaid",status:"confirmed",special_requests:h||"",created_at:new Date().toLocaleString("vi-VN")},P=this.rooms.findIndex(A=>A.id===k.id);return P!==-1&&(this.rooms[P].status="reserved",this.rooms[P].guest_name=r),this.bookings.unshift(E),this.notify(),E}updateBookingStatus(t,e){const o=this.bookings.find(r=>r.id===Number(t));if(!o)return;o.status=e;const a=this.rooms.find(r=>r.id===o.room_id);a&&(e==="checked_in"?(a.status="occupied",a.guest_name=o.customer_name):e==="checked_out"?(a.status="dirty",a.guest_name=""):e==="cancelled"&&(a.status="clean",a.guest_name="")),this.notify()}updatePhysicalRoomStatus(t,e){const o=this.rooms.find(a=>a.id===Number(t));o&&(o.status=e,e==="clean"&&(o.guest_name=""),this.notify())}lookupBooking(t){if(!t)return[];const e=t.trim().toUpperCase();return this.bookings.filter(o=>o.booking_code.toUpperCase().includes(e)||o.customer_phone.includes(t.trim()))}cancelBooking(t,e="Khách yêu cầu hủy"){const o=this.bookings.find(r=>r.booking_code.toUpperCase()===t.toUpperCase());if(!o)throw new Error("Không tìm thấy mã đặt phòng");if(o.status==="checked_in"||o.status==="checked_out")throw new Error("Đơn đặt phòng đang lưu trú hoặc đã hoàn tất không thể hủy.");o.status="cancelled",o.cancel_reason=e;const a=this.rooms.find(r=>r.id===o.room_id);return a&&a.status!=="occupied"&&(a.status="clean",a.guest_name=""),this.notify(),o}getDashboardKPIs(){const t=this.bookings.filter(l=>l.status!=="cancelled"&&(l.payment_status==="paid"||l.status==="checked_in"||l.status==="checked_out")).reduce((l,h)=>l+h.total_amount,0),e=this.rooms.length,o=this.rooms.filter(l=>l.status==="occupied").length,a=this.rooms.filter(l=>l.status==="reserved").length,r=this.rooms.filter(l=>l.status==="clean").length,s=this.rooms.filter(l=>l.status==="dirty").length,c=Math.round((o+a)/e*100);return{totalRevenue:t,occupancyRate:c,totalRooms:e,occupiedRooms:o,reservedRooms:a,cleanRooms:r,dirtyRooms:s,totalBookings:this.bookings.length}}}const i=new Q,Y="https://f8fb6f6f730b404fb2f273fd789d04df.ingest.cloudflare.com";function j(){const n=navigator.userAgent;return/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(n)?"Tablet":/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/i.test(n)?"Mobile":"Desktop"}async function F(){try{const n=await fetch("https://www.cloudflare.com/cdn-cgi/trace",{cache:"no-store"});if(n.ok){const e=(await n.text()).trim().split(`
+`),o={};return e.forEach(a=>{const[r,s]=a.split("=");r&&s&&(o[r.trim()]=s.trim())}),{ip:o.ip||"Unknown",country:o.loc||"VN"}}}catch{try{const t=await fetch("https://api.country.is/");if(t.ok){const e=await t.json();return{ip:e.ip||"Unknown",country:e.country||"VN"}}}catch{}}return{ip:"Unknown",country:"VN"}}async function J(){try{const n=sessionStorage.getItem("aura_last_stream_track"),t=Date.now();if(n&&t-parseInt(n,10)<300*1e3)return;const e=await F(),o=j(),a={id:typeof crypto<"u"&&crypto.randomUUID?crypto.randomUUID():"vis-"+Math.random().toString(36).substring(2,12),country:e.country,device:o,time:t,ip:e.ip,meta:{path:window.location.pathname||"/",referrer:document.referrer||"Direct",screen:`${window.screen?window.screen.width:0}x${window.screen?window.screen.height:0}`,userAgent:navigator.userAgent,language:navigator.language||"vi-VN"}};if((await fetch(Y,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(a)})).ok){sessionStorage.setItem("aura_last_stream_track",t.toString());try{const s=JSON.parse(localStorage.getItem("aura_stream_visits_v1")||"[]");s.unshift(a),s.length>50&&s.pop(),localStorage.setItem("aura_stream_visits_v1",JSON.stringify(s))}catch{}console.log("📡 [Basin Catalog Stream] Đã ghi nhận lượt truy cập thành công:",{country:a.country,device:a.device,ip:a.ip,time:new Date(a.time).toLocaleString()})}}catch(n){console.warn("📡 [Basin Catalog Stream] Lỗi khi gửi dữ liệu stream:",n)}}function X(){return`
     <header class="navbar">
       <div class="container nav-wrapper">
         <a href="#" class="brand-logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
@@ -34,12 +35,12 @@
           <!-- Nút Chuyển Đổi Vai Trò Guest <-> Admin / Lễ Tân -->
           <div class="role-switcher-badge" id="nav-role-switcher" title="Bấm để chuyển đổi giữa giao diện Khách hàng và Cổng Lễ tân / Quản trị">
             <span class="dot"></span>
-            <span>${o.activeRole==="guest"?"Cổng Lễ Tân & Admin":"Về Trang Đặt Phòng"}</span>
+            <span>${i.activeRole==="guest"?"Cổng Lễ Tân & Admin":"Về Trang Đặt Phòng"}</span>
           </div>
         </div>
       </div>
     </header>
-  `}function j(){const n=document.getElementById("nav-track-btn");n&&(n.onclick=()=>o.openModal("trackBooking"));const t=document.getElementById("nav-role-switcher");t&&(t.onclick=()=>{const e=o.activeRole==="guest"?"admin":"guest";o.setRole(e)})}function F(){const{checkIn:n,checkOut:t,adults:e,children:i}=o.searchParams;return`
+  `}function W(){const n=document.getElementById("nav-track-btn");n&&(n.onclick=()=>i.openModal("trackBooking"));const t=document.getElementById("nav-role-switcher");t&&(t.onclick=()=>{const e=i.activeRole==="guest"?"admin":"guest";i.setRole(e)})}function Z(){const{checkIn:n,checkOut:t,adults:e,children:o}=i.searchParams;return`
     <section class="hero-section">
       <div class="container">
         <div class="hero-content">
@@ -120,10 +121,10 @@
                 Trẻ Em (< 12 tuổi)
               </label>
               <select id="search-children">
-                <option value="0" ${i==0?"selected":""}>0 Trẻ em</option>
-                <option value="1" ${i==1?"selected":""}>1 Trẻ em</option>
-                <option value="2" ${i==2?"selected":""}>2 Trẻ em</option>
-                <option value="3" ${i==3?"selected":""}>3 Trẻ em</option>
+                <option value="0" ${o==0?"selected":""}>0 Trẻ em</option>
+                <option value="1" ${o==1?"selected":""}>1 Trẻ em</option>
+                <option value="2" ${o==2?"selected":""}>2 Trẻ em</option>
+                <option value="3" ${o==3?"selected":""}>3 Trẻ em</option>
               </select>
             </div>
 
@@ -139,7 +140,7 @@
         </div>
       </div>
     </section>
-  `}function X(){const n=document.getElementById("hero-search-form");n&&(n.onsubmit=t=>{t.preventDefault();const e=document.getElementById("search-check-in").value,i=document.getElementById("search-check-out").value,r=document.getElementById("search-adults").value,a=document.getElementById("search-children").value;if(i<=e){alert("Ngày trả phòng (Check-out) phải sau ngày nhận phòng (Check-in) ít nhất 1 ngày!");return}o.setSearchParams({checkIn:e,checkOut:i,adults:r,children:a});const s=document.getElementById("rooms-section");s&&s.scrollIntoView({behavior:"smooth"})})}function J(){const{checkIn:n,checkOut:t,categoryFilter:e,sortBy:i}=o.searchParams,r=o.calculateNights(n,t);let a=o.roomTypes.filter(c=>e==="all"?!0:e==="ocean_view"?c.tags.some(l=>l.includes("View Biển")):e==="pool_villa"?c.tags.some(l=>l.includes("Hồ Bơi")):e==="family"?c.max_adults>=4:e==="honeymoon"?c.tags.some(l=>l.includes("Trăng Mật")):!0);i==="price_asc"?a.sort((c,l)=>c.base_price-l.base_price):i==="price_desc"?a.sort((c,l)=>l.base_price-c.base_price):i==="rating"&&a.sort((c,l)=>l.rating_avg-c.rating_avg);const s=a.map(c=>{const h=o.getAvailableRoomsForType(c.id,n,t).length>0,u=o.calculatePriceBreakdown(c,n,t);return`
+  `}function tt(){const n=document.getElementById("hero-search-form");n&&(n.onsubmit=t=>{t.preventDefault();const e=document.getElementById("search-check-in").value,o=document.getElementById("search-check-out").value,a=document.getElementById("search-adults").value,r=document.getElementById("search-children").value;if(o<=e){alert("Ngày trả phòng (Check-out) phải sau ngày nhận phòng (Check-in) ít nhất 1 ngày!");return}i.setSearchParams({checkIn:e,checkOut:o,adults:a,children:r});const s=document.getElementById("rooms-section");s&&s.scrollIntoView({behavior:"smooth"})})}function nt(){const{checkIn:n,checkOut:t,categoryFilter:e,sortBy:o}=i.searchParams,a=i.calculateNights(n,t);let r=i.roomTypes.filter(c=>e==="all"?!0:e==="ocean_view"?c.tags.some(l=>l.includes("View Biển")):e==="pool_villa"?c.tags.some(l=>l.includes("Hồ Bơi")):e==="family"?c.max_adults>=4:e==="honeymoon"?c.tags.some(l=>l.includes("Trăng Mật")):!0);o==="price_asc"?r.sort((c,l)=>c.base_price-l.base_price):o==="price_desc"?r.sort((c,l)=>l.base_price-c.base_price):o==="rating"&&r.sort((c,l)=>l.rating_avg-c.rating_avg);const s=r.map(c=>{const h=i.getAvailableRoomsForType(c.id,n,t).length>0,u=i.calculatePriceBreakdown(c,n,t);return`
       <article class="room-card" data-room-id="${c.id}">
         <div class="room-image-box">
           <img src="${c.thumbnail_url}" alt="${c.name}" class="room-image" loading="lazy" />
@@ -186,9 +187,9 @@
           <div class="room-card-footer">
             <div class="room-price-box">
               <span class="room-price-label">Giá từ / đêm</span>
-              <span class="room-price-value">${o.formatPrice(c.base_price)}</span>
+              <span class="room-price-value">${i.formatPrice(c.base_price)}</span>
               <span class="room-price-period">
-                ${r>1?`(${r} đêm trọn gói: ${o.formatPrice(u.finalTotal)})`:"/ đêm"}
+                ${a>1?`(${a} đêm trọn gói: ${i.formatPrice(u.finalTotal)})`:"/ đêm"}
               </span>
             </div>
 
@@ -223,7 +224,7 @@
         <!-- Bộ Lọc Đa Tiêu Chí -->
         <div class="filter-container">
           <div class="filter-chips">
-            <button class="filter-chip ${e==="all"?"active":""}" data-filter="all">Tất Cả (${o.roomTypes.length})</button>
+            <button class="filter-chip ${e==="all"?"active":""}" data-filter="all">Tất Cả (${i.roomTypes.length})</button>
             <button class="filter-chip ${e==="ocean_view"?"active":""}" data-filter="ocean_view">View Biển</button>
             <button class="filter-chip ${e==="pool_villa"?"active":""}" data-filter="pool_villa">Hồ Bơi Riêng</button>
             <button class="filter-chip ${e==="family"?"active":""}" data-filter="family">Biệt Thự Gia Đình</button>
@@ -233,10 +234,10 @@
           <div class="filter-sort">
             <label for="room-sort-select" style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted);">Sắp xếp:</label>
             <select id="room-sort-select">
-              <option value="featured" ${i==="featured"?"selected":""}>Nổi bật nhất</option>
-              <option value="price_asc" ${i==="price_asc"?"selected":""}>Giá tăng dần</option>
-              <option value="price_desc" ${i==="price_desc"?"selected":""}>Giá giảm dần</option>
-              <option value="rating" ${i==="rating"?"selected":""}>Đánh giá cao nhất</option>
+              <option value="featured" ${o==="featured"?"selected":""}>Nổi bật nhất</option>
+              <option value="price_asc" ${o==="price_asc"?"selected":""}>Giá tăng dần</option>
+              <option value="price_desc" ${o==="price_desc"?"selected":""}>Giá giảm dần</option>
+              <option value="rating" ${o==="rating"?"selected":""}>Đánh giá cao nhất</option>
             </select>
           </div>
         </div>
@@ -247,7 +248,7 @@
         </div>
       </div>
     </section>
-  `}function W(){document.querySelectorAll(".filter-chip").forEach(t=>{t.onclick=()=>{const e=t.dataset.filter;o.setSearchParams({categoryFilter:e})}});const n=document.getElementById("room-sort-select");n&&(n.onchange=t=>{o.setSearchParams({sortBy:t.target.value})}),document.querySelectorAll(".room-card button[data-action]").forEach(t=>{t.onclick=()=>{const e=t.dataset.action,i=Number(t.dataset.id),r=o.roomTypes.find(a=>a.id===i);r&&(e==="detail"?o.openModal("roomDetail",r):e==="book"&&o.openModal("booking",r))}})}function Z(){return`
+  `}function et(){document.querySelectorAll(".filter-chip").forEach(t=>{t.onclick=()=>{const e=t.dataset.filter;i.setSearchParams({categoryFilter:e})}});const n=document.getElementById("room-sort-select");n&&(n.onchange=t=>{i.setSearchParams({sortBy:t.target.value})}),document.querySelectorAll(".room-card button[data-action]").forEach(t=>{t.onclick=()=>{const e=t.dataset.action,o=Number(t.dataset.id),a=i.roomTypes.find(r=>r.id===o);a&&(e==="detail"?i.openModal("roomDetail",a):e==="book"&&i.openModal("booking",a))}})}function ot(){return`
     <section class="section-highlights" id="highlights-section">
       <div class="container">
         <div class="section-header">
@@ -310,8 +311,8 @@
         </div>
       </div>
     </section>
-  `}function tt(){const n=o.selectedRoomType;if(!n)return"";const{checkIn:t,checkOut:e}=o.searchParams,i=o.calculateNights(t,e),r=o.calculatePriceBreakdown(n,t,e),s=o.getAvailableRoomsForType(n.id,t,e).length>0;return`
-    <div class="modal-overlay ${o.activeModal==="roomDetail"?"active":""}" id="room-detail-modal">
+  `}function it(){const n=i.selectedRoomType;if(!n)return"";const{checkIn:t,checkOut:e}=i.searchParams,o=i.calculateNights(t,e),a=i.calculatePriceBreakdown(n,t,e),s=i.getAvailableRoomsForType(n.id,t,e).length>0;return`
+    <div class="modal-overlay ${i.activeModal==="roomDetail"?"active":""}" id="room-detail-modal">
       <div class="modal-card">
         <button class="modal-close-btn" id="modal-detail-close">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -339,7 +340,7 @@
             </div>
             <div style="text-align: right;">
               <span style="font-size: 0.8rem; color: var(--color-text-muted); display: block;">Giá phòng</span>
-              <span style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary);">${o.formatPrice(n.base_price)}</span>
+              <span style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary);">${i.formatPrice(n.base_price)}</span>
               <span style="font-size: 0.85rem; color: var(--color-text-muted);">/ đêm</span>
             </div>
           </div>
@@ -384,10 +385,10 @@
           <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 20px; border-top: 1px solid rgba(11, 19, 43, 0.1);">
             <div>
               <span style="font-size: 0.85rem; color: var(--color-text-muted);">
-                Tổng tiền (${i} đêm: ${t} ➔ ${e}):
+                Tổng tiền (${o} đêm: ${t} ➔ ${e}):
               </span>
               <div style="font-size: 1.6rem; font-weight: 800; color: var(--color-primary);">
-                ${o.formatPrice(r.finalTotal)}
+                ${i.formatPrice(a.finalTotal)}
               </div>
             </div>
 
@@ -406,8 +407,8 @@
         </div>
       </div>
     </div>
-  `}function nt(){if(!document.getElementById("room-detail-modal"))return;const t=document.getElementById("modal-detail-close");t&&(t.onclick=()=>o.closeModal()),document.querySelectorAll(".gallery-thumb").forEach(i=>{i.onclick=()=>{const r=document.getElementById("detail-main-img");r&&(r.src=i.dataset.src,document.querySelectorAll(".gallery-thumb").forEach(a=>a.style.borderColor="#fff"),i.style.borderColor="var(--color-secondary)")}});const e=document.getElementById("detail-book-now-btn");e&&(e.onclick=()=>{const i=o.selectedRoomType;o.openModal("booking",i)})}let x="",b=null;function et(){const n=o.selectedRoomType;if(!n)return"";const{checkIn:t,checkOut:e,adults:i,children:r}=o.searchParams,a=o.calculatePriceBreakdown(n,t,e,x);return`
-    <div class="modal-overlay ${o.activeModal==="booking"?"active":""}" id="booking-modal">
+  `}function at(){if(!document.getElementById("room-detail-modal"))return;const t=document.getElementById("modal-detail-close");t&&(t.onclick=()=>i.closeModal()),document.querySelectorAll(".gallery-thumb").forEach(o=>{o.onclick=()=>{const a=document.getElementById("detail-main-img");a&&(a.src=o.dataset.src,document.querySelectorAll(".gallery-thumb").forEach(r=>r.style.borderColor="#fff"),o.style.borderColor="var(--color-secondary)")}});const e=document.getElementById("detail-book-now-btn");e&&(e.onclick=()=>{const o=i.selectedRoomType;i.openModal("booking",o)})}let x="",b=null;function rt(){const n=i.selectedRoomType;if(!n)return"";const{checkIn:t,checkOut:e,adults:o,children:a}=i.searchParams,r=i.calculatePriceBreakdown(n,t,e,x);return`
+    <div class="modal-overlay ${i.activeModal==="booking"?"active":""}" id="booking-modal">
       <div class="modal-card" style="max-width: 850px;">
         <button class="modal-close-btn" id="modal-booking-close">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -417,16 +418,16 @@
         </button>
 
         <div style="padding: 32px;" id="booking-modal-body">
-          ${b?it(b):ot(n,t,e,i,r,a)}
+          ${b?ct(b):st(n,t,e,o,a,r)}
         </div>
       </div>
     </div>
-  `}function ot(n,t,e,i,r,a){return`
+  `}function st(n,t,e,o,a,r){return`
     <div style="border-bottom: 1px solid rgba(11, 19, 43, 0.08); padding-bottom: 20px; margin-bottom: 24px;">
       <span class="section-tag">Thủ Tục Giữ Phòng Trực Tuyến</span>
       <h2 style="font-size: 1.85rem; color: var(--color-primary); margin-bottom: 4px;">Đặt Phòng: ${n.name}</h2>
       <p style="font-size: 0.9rem; color: var(--color-text-muted);">
-        Khoảng ngày: <strong>${t}</strong> ➔ <strong>${e}</strong> (${a.totalNights} đêm) • ${i} người lớn, ${r} trẻ em
+        Khoảng ngày: <strong>${t}</strong> ➔ <strong>${e}</strong> (${r.totalNights} đêm) • ${o} người lớn, ${a} trẻ em
       </p>
     </div>
 
@@ -440,7 +441,7 @@
             <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--color-text-main);">
               Họ Và Tên Khách Hàng *
             </label>
-            <input type="text" id="cust-name" required placeholder="Ví dụ: Nguyễn Văn Chiến" style="width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(11, 19, 43, 0.15); outline: none;" />
+            <input type="text" id="cust-name" required placeholder="Ví dụ: Tô Thị Ngọc Ánh" style="width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(11, 19, 43, 0.15); outline: none;" />
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
@@ -505,27 +506,27 @@
           </h4>
 
           <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; margin-bottom: 16px;">
-            ${a.nightlyDetails.map((s,c)=>`
+            ${r.nightlyDetails.map((s,c)=>`
               <div style="display: flex; justify-content: space-between;">
                 <span>Đêm ${c+1} (${s.date}) <small style="color: var(--color-secondary-dark);">${s.note}</small></span>
-                <strong>${o.formatPrice(s.rate)}</strong>
+                <strong>${i.formatPrice(s.rate)}</strong>
               </div>
             `).join("")}
 
             <div style="display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px dashed rgba(11, 19, 43, 0.1);">
               <span>Tạm tính tiền phòng:</span>
-              <strong>${o.formatPrice(a.subtotal)}</strong>
+              <strong>${i.formatPrice(r.subtotal)}</strong>
             </div>
 
             <div style="display: flex; justify-content: space-between;">
               <span>Phí dịch vụ resort (5%):</span>
-              <strong>${o.formatPrice(a.serviceFee)}</strong>
+              <strong>${i.formatPrice(r.serviceFee)}</strong>
             </div>
 
-            ${a.discount>0?`
+            ${r.discount>0?`
               <div style="display: flex; justify-content: space-between; color: var(--color-accent-rose); font-weight: 700;">
-                <span>Mã giảm giá (${a.promoLabel}):</span>
-                <span>-${o.formatPrice(a.discount)}</span>
+                <span>Mã giảm giá (${r.promoLabel}):</span>
+                <span>-${i.formatPrice(r.discount)}</span>
               </div>
             `:""}
           </div>
@@ -543,7 +544,7 @@
             <div>
               <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Tổng Thanh Toán</span>
               <div style="font-size: 1.45rem; font-weight: 800; color: var(--color-primary);">
-                ${o.formatPrice(a.finalTotal)}
+                ${i.formatPrice(r.finalTotal)}
               </div>
             </div>
             <span style="font-size: 0.75rem; background: #d1fae5; color: #065f46; font-weight: 700; padding: 4px 8px; border-radius: var(--radius-full);">
@@ -553,7 +554,7 @@
         </div>
       </div>
     </div>
-  `}function it(n){const t=n.payment_method==="BANK_TRANSFER_QR",e=`https://api.vietqr.io/image/970422-0988123456-compact.png?amount=${n.total_amount}&addInfo=${n.booking_code}&accountName=AURA%20STAY%20RESORT`;return`
+  `}function ct(n){const t=n.payment_method==="BANK_TRANSFER_QR",e=`https://api.vietqr.io/image/970422-0988123456-compact.png?amount=${n.total_amount}&addInfo=${n.booking_code}&accountName=AURA%20STAY%20RESORT`;return`
     <div style="text-align: center; padding: 20px 0;">
       <div style="width: 72px; height: 72px; background: #d1fae5; color: #065f46; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -586,7 +587,7 @@
         </div>
         <div style="display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid rgba(11, 19, 43, 0.1);">
           <span style="color: var(--color-text-muted);">Tổng số tiền:</span>
-          <strong style="font-size: 1.2rem; color: var(--color-primary);">${o.formatPrice(n.total_amount)}</strong>
+          <strong style="font-size: 1.2rem; color: var(--color-primary);">${i.formatPrice(n.total_amount)}</strong>
         </div>
       </div>
 
@@ -611,8 +612,8 @@
         </button>
       </div>
     </div>
-  `}function at(){if(!document.getElementById("booking-modal"))return;const t=document.getElementById("modal-booking-close");t&&(t.onclick=()=>{b=null,x="",o.closeModal()});const e=document.getElementById("apply-promo-btn");e&&(e.onclick=()=>{const s=document.getElementById("promo-input");x=s?s.value:"",o.notify()});const i=document.getElementById("booking-checkout-form");i&&(i.onsubmit=s=>{var c;s.preventDefault();try{const l=document.getElementById("cust-name").value,h=document.getElementById("cust-phone").value,u=document.getElementById("cust-email").value,p=document.getElementById("cust-id-card").value,d=document.getElementById("cust-requests").value,f=((c=document.querySelector('input[name="payment_method"]:checked'))==null?void 0:c.value)||"PAY_AT_CHECKIN";b=o.createBooking({roomTypeId:o.selectedRoomType.id,checkIn:o.searchParams.checkIn,checkOut:o.searchParams.checkOut,customerName:l,customerPhone:h,customerEmail:u,customerIdentity:p,specialRequests:d,paymentMethod:f,promoCode:x}),o.notify()}catch(l){alert(l.message)}});const r=document.getElementById("success-track-btn");r&&(r.onclick=()=>{const s=b==null?void 0:b.booking_code;b=null,x="",o.openModal("trackBooking"),setTimeout(()=>{const c=document.getElementById("track-query-input");c&&s&&(c.value=s,c.dispatchEvent(new Event("input")))},100)});const a=document.getElementById("success-done-btn");a&&(a.onclick=()=>{b=null,x="",o.closeModal()})}let w=null;function rt(){return`
-    <div class="modal-overlay ${o.activeModal==="trackBooking"?"active":""}" id="track-booking-modal">
+  `}function lt(){if(!document.getElementById("booking-modal"))return;const t=document.getElementById("modal-booking-close");t&&(t.onclick=()=>{b=null,x="",i.closeModal()});const e=document.getElementById("apply-promo-btn");e&&(e.onclick=()=>{const s=document.getElementById("promo-input");x=s?s.value:"",i.notify()});const o=document.getElementById("booking-checkout-form");o&&(o.onsubmit=s=>{var c;s.preventDefault();try{const l=document.getElementById("cust-name").value,h=document.getElementById("cust-phone").value,u=document.getElementById("cust-email").value,p=document.getElementById("cust-id-card").value,d=document.getElementById("cust-requests").value,f=((c=document.querySelector('input[name="payment_method"]:checked'))==null?void 0:c.value)||"PAY_AT_CHECKIN";b=i.createBooking({roomTypeId:i.selectedRoomType.id,checkIn:i.searchParams.checkIn,checkOut:i.searchParams.checkOut,customerName:l,customerPhone:h,customerEmail:u,customerIdentity:p,specialRequests:d,paymentMethod:f,promoCode:x}),i.notify()}catch(l){alert(l.message)}});const a=document.getElementById("success-track-btn");a&&(a.onclick=()=>{const s=b==null?void 0:b.booking_code;b=null,x="",i.openModal("trackBooking"),setTimeout(()=>{const c=document.getElementById("track-query-input");c&&s&&(c.value=s,c.dispatchEvent(new Event("input")))},100)});const r=document.getElementById("success-done-btn");r&&(r.onclick=()=>{b=null,x="",i.closeModal()})}let w=null;function dt(){return`
+    <div class="modal-overlay ${i.activeModal==="trackBooking"?"active":""}" id="track-booking-modal">
       <div class="modal-card" style="max-width: 680px;">
         <button class="modal-close-btn" id="modal-track-close">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -638,16 +639,16 @@
 
           <!-- Kết Quả -->
           <div id="track-results-container">
-            ${E(w)}
+            ${I(w)}
           </div>
         </div>
       </div>
     </div>
-  `}function E(n){return n?n.length===0?`
+  `}function I(n){return n?n.length===0?`
       <div style="text-align: center; padding: 30px; color: var(--color-accent-rose); background: #fee2e2; border-radius: var(--radius-md);">
         Không tìm thấy đơn đặt phòng nào phù hợp với từ khóa của bạn. Vui lòng kiểm tra lại mã hoặc số điện thoại.
       </div>
-    `:n.map(t=>{const e=t.status==="cancelled",i=t.status==="confirmed"||t.status==="pending",r=[{key:"pending",label:"Tạo Đơn"},{key:"confirmed",label:"Đã Xác Nhận"},{key:"checked_in",label:"Đang Ở (Check-in)"},{key:"checked_out",label:"Hoàn Tất"}],a=r.findIndex(s=>s.key===t.status);return`
+    `:n.map(t=>{const e=t.status==="cancelled",o=t.status==="confirmed"||t.status==="pending",a=[{key:"pending",label:"Tạo Đơn"},{key:"confirmed",label:"Đã Xác Nhận"},{key:"checked_in",label:"Đang Ở (Check-in)"},{key:"checked_out",label:"Hoàn Tất"}],r=a.findIndex(s=>s.key===t.status);return`
       <div style="background: var(--color-bg-subtle); border: 1px solid rgba(11, 19, 43, 0.1); border-radius: var(--radius-md); padding: 22px; margin-bottom: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid rgba(11, 19, 43, 0.08); padding-bottom: 12px;">
           <div>
@@ -667,7 +668,7 @@
         `:`
           <div style="display: flex; justify-content: space-between; position: relative; margin: 24px 0 28px;">
             <div style="position: absolute; top: 14px; left: 10%; right: 10%; height: 2px; background: #cbd5e1; z-index: 1;"></div>
-            ${r.map((s,c)=>{const l=a>=c;return`
+            ${a.map((s,c)=>{const l=r>=c;return`
                 <div style="position: relative; z-index: 2; text-align: center; flex: 1;">
                   <div style="width: 30px; height: 30px; border-radius: 50%; background: ${l?"var(--color-secondary)":"#e2e8f0"}; color: ${l?"#fff":"#64748b"}; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; font-weight: 700; font-size: 0.8rem; box-shadow: ${l?"var(--shadow-gold)":"none"};">
                     ${c+1}
@@ -686,10 +687,10 @@
           <div>Hạng phòng: <strong>${t.room_type_name||"Deluxe"}</strong></div>
           <div>Số phòng gán: <strong style="color: var(--color-secondary-dark);">Phòng ${t.room_number||"Chờ lễ tân"}</strong></div>
           <div>Khoảng ngày: <span>${t.check_in_date} ➔ ${t.check_out_date} (${t.total_nights} đêm)</span></div>
-          <div>Tổng chi phí: <strong style="color: var(--color-primary);">${o.formatPrice(t.total_amount)}</strong></div>
+          <div>Tổng chi phí: <strong style="color: var(--color-primary);">${i.formatPrice(t.total_amount)}</strong></div>
         </div>
 
-        ${i?`
+        ${o?`
           <div style="text-align: right; border-top: 1px dashed rgba(11, 19, 43, 0.1); padding-top: 12px;">
             <button class="btn-cancel-booking" data-code="${t.booking_code}" style="color: var(--color-accent-rose); font-size: 0.82rem; font-weight: 700; text-decoration: underline; background: none; border: none; cursor: pointer;">
               Hủy Giữ Chỗ Đơn Này
@@ -705,7 +706,7 @@
         </svg>
         Vui lòng nhập thông tin để tra cứu lịch trình lưu trú.
       </div>
-    `}function st(){if(!document.getElementById("track-booking-modal"))return;const t=document.getElementById("modal-track-close");t&&(t.onclick=()=>{w=null,o.closeModal()});const e=()=>{const a=document.getElementById("track-query-input"),s=a?a.value:"";w=o.lookupBooking(s);const c=document.getElementById("track-results-container");c&&(c.innerHTML=E(w),D())},i=document.getElementById("btn-do-track");i&&(i.onclick=e);const r=document.getElementById("track-query-input");r&&(r.onkeyup=a=>{a.key==="Enter"&&e()}),D()}function D(){document.querySelectorAll(".btn-cancel-booking").forEach(n=>{n.onclick=()=>{const t=n.dataset.code;if(confirm(`Bạn có chắc chắn muốn hủy đơn đặt phòng [${t}] không? Phòng giữ chỗ sẽ được mở lại ngay lập tức.`))try{o.cancelBooking(t),alert("Đã hủy đặt phòng thành công!"),w=o.lookupBooking(t);const e=document.getElementById("track-results-container");e&&(e.innerHTML=E(w))}catch(e){alert(e.message)}}})}let g=null;function ct(){const n=o.getDashboardKPIs(),t=o.adminSubTab;return`
+    `}function ht(){if(!document.getElementById("track-booking-modal"))return;const t=document.getElementById("modal-track-close");t&&(t.onclick=()=>{w=null,i.closeModal()});const e=()=>{const r=document.getElementById("track-query-input"),s=r?r.value:"";w=i.lookupBooking(s);const c=document.getElementById("track-results-container");c&&(c.innerHTML=I(w),D())},o=document.getElementById("btn-do-track");o&&(o.onclick=e);const a=document.getElementById("track-query-input");a&&(a.onkeyup=r=>{r.key==="Enter"&&e()}),D()}function D(){document.querySelectorAll(".btn-cancel-booking").forEach(n=>{n.onclick=()=>{const t=n.dataset.code;if(confirm(`Bạn có chắc chắn muốn hủy đơn đặt phòng [${t}] không? Phòng giữ chỗ sẽ được mở lại ngay lập tức.`))try{i.cancelBooking(t),alert("Đã hủy đặt phòng thành công!"),w=i.lookupBooking(t);const e=document.getElementById("track-results-container");e&&(e.innerHTML=I(w))}catch(e){alert(e.message)}}})}let g=null;function gt(){const n=i.getDashboardKPIs(),t=i.adminSubTab;return`
     <div class="admin-view-container">
       <div class="container">
         <!-- Header Quản Trị & Lễ Tân -->
@@ -734,7 +735,7 @@
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
-              Quản Lý Booking (${o.bookings.length})
+              Quản Lý Booking (${i.bookings.length})
             </button>
             <button class="admin-nav-tab ${t==="pricing"?"active":""}" data-tab="pricing">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -758,7 +759,7 @@
         <div class="kpi-grid">
           <div class="kpi-card">
             <div class="kpi-card-label">Doanh Thu Thực Tế</div>
-            <div class="kpi-card-value">${o.formatPrice(n.totalRevenue)}</div>
+            <div class="kpi-card-value">${i.formatPrice(n.totalRevenue)}</div>
             <div class="kpi-card-sub">▲ Tăng 18.5% so với tháng trước</div>
           </div>
           <div class="kpi-card">
@@ -779,13 +780,13 @@
         </div>
 
         <!-- Nội Dung Sub-tab Hiện Tại -->
-        ${lt(t,n)}
+        ${ut(t,n)}
       </div>
 
       <!-- Modal Thao Tác Nhanh Phòng Vật Lý (Lễ Tân 1 Chạm) -->
-      ${mt()}
+      ${yt()}
     </div>
-  `}function lt(n,t){return n==="matrix"?dt():n==="bookings"?ht():n==="pricing"?gt():n==="kpi"?ut(t):""}function dt(){const n=[{title:"Tầng 1 - Hạng Phòng Deluxe View Biển",rooms:o.rooms.filter(t=>t.floor===1)},{title:"Tầng 2 - Grand Executive Suite & Honeymoon",rooms:o.rooms.filter(t=>t.floor===2)},{title:"Khu Biệt Thự Biệt Lập (Beachfront Villas & Bungalow)",rooms:o.rooms.filter(t=>t.floor===0)},{title:"Tầng 3 (Tầng Thượng) - Presidential Penthouse",rooms:o.rooms.filter(t=>t.floor===3)}];return`
+  `}function ut(n,t){return n==="matrix"?mt():n==="bookings"?pt():n==="pricing"?vt():n==="kpi"?bt(t):""}function mt(){const n=[{title:"Tầng 1 - Hạng Phòng Deluxe View Biển",rooms:i.rooms.filter(t=>t.floor===1)},{title:"Tầng 2 - Grand Executive Suite & Honeymoon",rooms:i.rooms.filter(t=>t.floor===2)},{title:"Khu Biệt Thự Biệt Lập (Beachfront Villas & Bungalow)",rooms:i.rooms.filter(t=>t.floor===0)},{title:"Tầng 3 (Tầng Thượng) - Presidential Penthouse",rooms:i.rooms.filter(t=>t.floor===3)}];return`
     <div class="matrix-section">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
         <h3 style="font-size: 1.4rem; color: var(--color-primary);">Sơ Đồ Tình Trạng Phòng Thực Tế (Room Matrix)</h3>
@@ -794,11 +795,11 @@
 
       <!-- Chú Thích Màu Sắc -->
       <div class="matrix-legend">
-        <div class="legend-item"><span class="legend-badge badge-clean"></span> Sạch / Sẵn sàng (${o.rooms.filter(t=>t.status==="clean").length})</div>
-        <div class="legend-item"><span class="legend-badge badge-occupied"></span> Đang có khách ở (${o.rooms.filter(t=>t.status==="occupied").length})</div>
-        <div class="legend-item"><span class="legend-badge badge-reserved"></span> Đã đặt trước (${o.rooms.filter(t=>t.status==="reserved").length})</div>
-        <div class="legend-item"><span class="legend-badge badge-dirty"></span> Cần dọn dẹp (${o.rooms.filter(t=>t.status==="dirty").length})</div>
-        <div class="legend-item"><span class="legend-badge badge-maintenance"></span> Đang bảo trì (${o.rooms.filter(t=>t.status==="maintenance").length})</div>
+        <div class="legend-item"><span class="legend-badge badge-clean"></span> Sạch / Sẵn sàng (${i.rooms.filter(t=>t.status==="clean").length})</div>
+        <div class="legend-item"><span class="legend-badge badge-occupied"></span> Đang có khách ở (${i.rooms.filter(t=>t.status==="occupied").length})</div>
+        <div class="legend-item"><span class="legend-badge badge-reserved"></span> Đã đặt trước (${i.rooms.filter(t=>t.status==="reserved").length})</div>
+        <div class="legend-item"><span class="legend-badge badge-dirty"></span> Cần dọn dẹp (${i.rooms.filter(t=>t.status==="dirty").length})</div>
+        <div class="legend-item"><span class="legend-badge badge-maintenance"></span> Đang bảo trì (${i.rooms.filter(t=>t.status==="maintenance").length})</div>
       </div>
 
       <!-- Danh Sách Theo Tầng -->
@@ -806,13 +807,13 @@
         <div class="floor-group">
           <h4 class="floor-title">${t.title}</h4>
           <div class="room-matrix-grid">
-            ${t.rooms.map(e=>{const i=o.roomTypes.find(r=>r.id===e.room_type_id);return`
+            ${t.rooms.map(e=>{const o=i.roomTypes.find(a=>a.id===e.room_type_id);return`
                 <div class="matrix-room-cell ${e.status}" data-room-id="${e.id}">
                   <div class="room-cell-top">
                     <span class="room-cell-number">${e.room_number}</span>
                     <span class="room-cell-status-pill">${e.status}</span>
                   </div>
-                  <div class="room-cell-type">${i?i.name:"Phòng"}</div>
+                  <div class="room-cell-type">${o?o.name:"Phòng"}</div>
                   <div class="room-cell-guest">
                     ${e.guest_name?`👤 ${e.guest_name}`:"• Trống"}
                   </div>
@@ -822,7 +823,7 @@
         </div>
       `).join("")}
     </div>
-  `}function ht(){return`
+  `}function pt(){return`
     <div class="data-table-card">
       <div class="table-toolbar">
         <div>
@@ -848,7 +849,7 @@
             </tr>
           </thead>
           <tbody>
-            ${o.bookings.map(n=>`
+            ${i.bookings.map(n=>`
               <tr>
                 <td><strong>${n.booking_code}</strong></td>
                 <td>${n.customer_name}</td>
@@ -856,7 +857,7 @@
                 <td>${n.room_type_name||"Deluxe"}</td>
                 <td><strong style="color: var(--color-secondary-dark);">${n.room_number||"-"}</strong></td>
                 <td>${n.check_in_date} ➔ ${n.check_out_date} (${n.total_nights}đ)</td>
-                <td><strong>${o.formatPrice(n.total_amount)}</strong></td>
+                <td><strong>${i.formatPrice(n.total_amount)}</strong></td>
                 <td>
                   <span style="font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; ${n.payment_status==="paid"?"background: #d1fae5; color: #065f46;":"background: #fee2e2; color: #991b1b;"}">
                     ${n.payment_status==="paid"?"Đã Thanh Toán":"Chưa Trả"}
@@ -890,7 +891,7 @@
         </table>
       </div>
     </div>
-  `}function gt(){return`
+  `}function vt(){return`
     <div class="matrix-section">
       <h3 style="font-size: 1.3rem; color: var(--color-primary); margin-bottom: 12px;">Cấu Hình Biểu Giá Linh Hoạt (Zero-Trust Dynamic Pricing)</h3>
       <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">
@@ -922,7 +923,7 @@
         </div>
       </div>
     </div>
-  `}function ut(n){return`
+  `}function bt(n){return`
     <div class="matrix-section">
       <h3 style="font-size: 1.3rem; color: var(--color-primary); margin-bottom: 20px;">Phân Tích Chỉ Số Kinh Doanh Khách Sạn</h3>
       
@@ -930,13 +931,13 @@
         <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-md);">
           <div style="font-size: 0.8rem; color: var(--color-text-muted); font-weight: 600;">GIÁ PHÒNG BÌNH QUÂN (ADR)</div>
           <div style="font-size: 1.6rem; font-weight: 700; color: var(--color-primary); margin-top: 6px;">
-            ${o.formatPrice(Math.round(n.totalRevenue/(n.totalBookings||1)))}
+            ${i.formatPrice(Math.round(n.totalRevenue/(n.totalBookings||1)))}
           </div>
         </div>
         <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-md);">
           <div style="font-size: 0.8rem; color: var(--color-text-muted); font-weight: 600;">REVPAR (DOANH THU TRÊN PHÒNG SẴN CÓ)</div>
           <div style="font-size: 1.6rem; font-weight: 700; color: var(--color-primary); margin-top: 6px;">
-            ${o.formatPrice(Math.round(n.totalRevenue/n.totalRooms))}
+            ${i.formatPrice(Math.round(n.totalRevenue/n.totalRooms))}
           </div>
         </div>
         <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-md);">
@@ -963,7 +964,7 @@
         </div>
       </div>
     </div>
-  `}function mt(){if(!g)return"";const n=g,t=o.roomTypes.find(e=>e.id===n.room_type_id);return`
+  `}function yt(){if(!g)return"";const n=g,t=i.roomTypes.find(e=>e.id===n.room_type_id);return`
     <div class="modal-overlay active" id="room-action-modal">
       <div class="modal-card" style="max-width: 480px; padding: 28px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
@@ -996,7 +997,7 @@
         </button>
       </div>
     </div>
-  `}function pt(){document.querySelectorAll(".admin-nav-tab").forEach(r=>{r.onclick=()=>{o.setAdminSubTab(r.dataset.tab)}}),document.querySelectorAll(".matrix-room-cell").forEach(r=>{r.onclick=()=>{const a=Number(r.dataset.roomId);g=o.rooms.find(s=>s.id===a),o.notify()}}),document.querySelectorAll(".btn-action-status").forEach(r=>{r.onclick=()=>{const a=r.dataset.id,s=r.dataset.status;o.updateBookingStatus(a,s)}});const n=document.getElementById("action-set-clean");n&&g&&(n.onclick=()=>{o.updatePhysicalRoomStatus(g.id,"clean"),g=null,o.notify()});const t=document.getElementById("action-set-dirty");t&&g&&(t.onclick=()=>{o.updatePhysicalRoomStatus(g.id,"dirty"),g=null,o.notify()});const e=document.getElementById("action-set-maintenance");e&&g&&(e.onclick=()=>{o.updatePhysicalRoomStatus(g.id,"maintenance"),g=null,o.notify()});const i=document.getElementById("action-close-modal");i&&(i.onclick=()=>{g=null,o.notify()})}let $=!1,y=[{sender:"bot",text:"Xin chào quý khách! Tôi là <strong>AURA Concierge</strong> — Trợ lý du lịch ảo của AURA STAY Resort & Spa. Tôi có thể hỗ trợ quý khách tìm phòng trống, giải đáp chính sách lưu trú hoặc tra cứu đơn đặt phòng tức thì."}];function vt(){return`
+  `}function ft(){document.querySelectorAll(".admin-nav-tab").forEach(a=>{a.onclick=()=>{i.setAdminSubTab(a.dataset.tab)}}),document.querySelectorAll(".matrix-room-cell").forEach(a=>{a.onclick=()=>{const r=Number(a.dataset.roomId);g=i.rooms.find(s=>s.id===r),i.notify()}}),document.querySelectorAll(".btn-action-status").forEach(a=>{a.onclick=()=>{const r=a.dataset.id,s=a.dataset.status;i.updateBookingStatus(r,s)}});const n=document.getElementById("action-set-clean");n&&g&&(n.onclick=()=>{i.updatePhysicalRoomStatus(g.id,"clean"),g=null,i.notify()});const t=document.getElementById("action-set-dirty");t&&g&&(t.onclick=()=>{i.updatePhysicalRoomStatus(g.id,"dirty"),g=null,i.notify()});const e=document.getElementById("action-set-maintenance");e&&g&&(e.onclick=()=>{i.updatePhysicalRoomStatus(g.id,"maintenance"),g=null,i.notify()});const o=document.getElementById("action-close-modal");o&&(o.onclick=()=>{g=null,i.notify()})}let $=!1,y=[{sender:"bot",text:"Xin chào quý khách! Tôi là <strong>AURA Concierge</strong> — Trợ lý du lịch ảo của AURA STAY Resort & Spa. Tôi có thể hỗ trợ quý khách tìm phòng trống, giải đáp chính sách lưu trú hoặc tra cứu đơn đặt phòng tức thì."}];function xt(){return`
     <!-- Nút Bật / Tắt Chatbot Nổi -->
     <div class="chatbot-toggle-btn" id="chatbot-toggle" title="Trò chuyện cùng Trợ lý AURA Concierge">
       <div class="chatbot-pulse-ring"></div>
@@ -1062,47 +1063,47 @@
       <img src="${t.thumbnail_url}" class="chat-card-thumb" />
       <div class="chat-card-info" style="flex-grow: 1;">
         <h5>${t.name}</h5>
-        <div class="price">${o.formatPrice(t.base_price)}/đêm</div>
+        <div class="price">${i.formatPrice(t.base_price)}/đêm</div>
       </div>
       <button class="chip-btn btn-chat-book" data-id="${t.id}" style="background: var(--color-secondary); color: #fff;">
         Đặt Ngay
       </button>
     </div>
-  `).join("")}function N(n){const t=n.toLowerCase().trim(),e=n.match(/AUR-\d{6}-\d{4}/i),i=n.match(/(0[35789]\d{8})/);if(e||i){const a=e?e[0].toUpperCase():i[0],s=o.lookupBooking(a);if(s.length>0){const c=s[0],l={pending:"Chờ xác nhận (Pending)",confirmed:"Đã xác nhận (Confirmed)",checked_in:"Đang lưu trú (Checked-in)",checked_out:"Đã trả phòng (Checked-out)",cancelled:"Đã hủy (Cancelled)"};return{text:`Dạ em đã tìm thấy thông tin đơn đặt phòng của quý khách:<br/>
+  `).join("")}function N(n){const t=n.toLowerCase().trim(),e=n.match(/AUR-\d{6}-\d{4}/i),o=n.match(/(0[35789]\d{8})/);if(e||o){const r=e?e[0].toUpperCase():o[0],s=i.lookupBooking(r);if(s.length>0){const c=s[0],l={pending:"Chờ xác nhận (Pending)",confirmed:"Đã xác nhận (Confirmed)",checked_in:"Đang lưu trú (Checked-in)",checked_out:"Đã trả phòng (Checked-out)",cancelled:"Đã hủy (Cancelled)"};return{text:`Dạ em đã tìm thấy thông tin đơn đặt phòng của quý khách:<br/>
         • <strong>Mã đặt phòng:</strong> <span style="color: var(--color-primary); font-weight: 700;">${c.booking_code}</span><br/>
         • <strong>Khách hàng:</strong> ${c.customer_name} (${c.customer_phone})<br/>
         • <strong>Hạng phòng:</strong> ${c.room_type_name} (Phòng ${c.room_number||"Sẽ xếp khi check-in"})<br/>
         • <strong>Lịch lưu trú:</strong> ${c.check_in_date} ➔ ${c.check_out_date} (${c.total_nights} đêm, ${c.adults} người lớn)<br/>
-        • <strong>Tổng thanh toán:</strong> <strong>${o.formatPrice(c.total_amount)}</strong> (${c.payment_status==="paid"?"Đã thanh toán":"Thanh toán tại quầy"})<br/>
-        • <strong>Trạng thái:</strong> <span style="font-weight:700; color: #10b981;">${l[c.status]||c.status}</span>`}}else return{text:`Dạ rất tiếc em không tìm thấy đơn đặt phòng nào khớp với "<strong>${a}</strong>". Quý khách vui lòng kiểm tra lại mã đơn (dạng AUR-YYMMDD-XXXX) hoặc số điện thoại đã dùng để đặt phòng nhé ạ!`}}if(t.includes("2 người")||t.includes("hai người")||t.includes("2 nguoi")||t.includes("cho 2")||t.includes("2 khách")||t.includes("cặp đôi")||t.includes("cap doi")||t.includes("1 người")||t.includes("một người")||t.includes("2 bạn"))return{text:`Dạ hiện tại AURA STAY có <strong>4 hạng phòng</strong> cực kỳ lý tưởng cho <strong>2 người</strong> (cặp đôi hoặc bạn bè) với các mức giá và phong cách trải nghiệm đa dạng:<br/>
+        • <strong>Tổng thanh toán:</strong> <strong>${i.formatPrice(c.total_amount)}</strong> (${c.payment_status==="paid"?"Đã thanh toán":"Thanh toán tại quầy"})<br/>
+        • <strong>Trạng thái:</strong> <span style="font-weight:700; color: #10b981;">${l[c.status]||c.status}</span>`}}else return{text:`Dạ rất tiếc em không tìm thấy đơn đặt phòng nào khớp với "<strong>${r}</strong>". Quý khách vui lòng kiểm tra lại mã đơn (dạng AUR-YYMMDD-XXXX) hoặc số điện thoại đã dùng để đặt phòng nhé ạ!`}}if(t.includes("2 người")||t.includes("hai người")||t.includes("2 nguoi")||t.includes("cho 2")||t.includes("2 khách")||t.includes("cặp đôi")||t.includes("cap doi")||t.includes("1 người")||t.includes("một người")||t.includes("2 bạn"))return{text:`Dạ hiện tại AURA STAY có <strong>4 hạng phòng</strong> cực kỳ lý tưởng cho <strong>2 người</strong> (cặp đôi hoặc bạn bè) với các mức giá và phong cách trải nghiệm đa dạng:<br/>
       • 🌿 <strong>Zen Tropical Garden Bungalow:</strong> từ <strong>1.450.000₫</strong>/đêm (tiết kiệm nhất, hiên ngắm hoa thơm và vườn dừa).<br/>
       • 🌊 <strong>Deluxe Ocean View:</strong> từ <strong>1.850.000₫</strong>/đêm (bán chạy nhất, ban công ngắm trọn biển hoàng hôn, bồn tắm đá).<br/>
       • 💖 <strong>Honeymoon Romantic Haven:</strong> từ <strong>2.400.000₫</strong>/đêm (thiết kế lãng mạn, tặng kèm rượu vang và bữa tối nến).<br/>
       • 👑 <strong>Grand Executive Suite:</strong> từ <strong>2.950.000₫</strong>/đêm (rộng 65m², bồn sục Jacuzzi ngoài trời cao cấp).<br/>
-      <small style="color: var(--color-text-muted);">*Tất cả đều đã bao gồm buffet sáng 5 sao miễn phí. Quý khách có thể nhấn nút <strong>"Đặt Ngay"</strong> ở thẻ phòng bên dưới nhé!*</small>`,cards:o.roomTypes.filter(s=>s.max_adults===2)};if(t.includes("4 người")||t.includes("bốn người")||t.includes("gia đình")||t.includes("gia dinh")||t.includes("family")||t.includes("3 người")||t.includes("ba người")||t.includes("có con nhỏ")||t.includes("trẻ em"))return{text:`Dạ đối với đoàn <strong>gia đình từ 3 - 4 người</strong>, AURA STAY có những lựa chọn không gian rộng rãi và riêng tư nhất:<br/>
+      <small style="color: var(--color-text-muted);">*Tất cả đều đã bao gồm buffet sáng 5 sao miễn phí. Quý khách có thể nhấn nút <strong>"Đặt Ngay"</strong> ở thẻ phòng bên dưới nhé!*</small>`,cards:i.roomTypes.filter(s=>s.max_adults===2)};if(t.includes("4 người")||t.includes("bốn người")||t.includes("gia đình")||t.includes("gia dinh")||t.includes("family")||t.includes("3 người")||t.includes("ba người")||t.includes("có con nhỏ")||t.includes("trẻ em"))return{text:`Dạ đối với đoàn <strong>gia đình từ 3 - 4 người</strong>, AURA STAY có những lựa chọn không gian rộng rãi và riêng tư nhất:<br/>
       • 🏊 <strong>Beachfront Private Pool Villa (5.600.000₫/đêm):</strong> Biệt thự sát biển với hồ bơi riêng, 2 giường King lớn biệt lập, sức chứa 4 người lớn + 2 trẻ em.<br/>
       • 👑 <strong>Grand Executive Suite (2.950.000₫/đêm):</strong> Có 1 giường King + Sofa Bed êm ái, bồn Jacuzzi ngoài trời cho cả nhà thư giãn.<br/>
       • 🌇 <strong>Presidential Sunset Penthouse (8.900.000₫/đêm):</strong> 3 phòng ngủ Master Suite trên tầng cao nhất cho gia đình lớn.<br/>
-      Quý khách xem chi tiết thẻ phòng phía dưới và bấm <strong>"Đặt Ngay"</strong> để giữ chỗ nhé!`,cards:o.roomTypes.filter(s=>s.id===3||s.id===2||s.id===4)};if(t.includes("6 người")||t.includes("sáu người")||t.includes("nhóm đông")||t.includes("đoàn")||t.includes("công ty")||t.includes("nhiều người"))return{text:`Dạ với đoàn <strong>từ 6 người trở lên</strong>, quý khách có thể lựa chọn:<br/>
+      Quý khách xem chi tiết thẻ phòng phía dưới và bấm <strong>"Đặt Ngay"</strong> để giữ chỗ nhé!`,cards:i.roomTypes.filter(s=>s.id===3||s.id===2||s.id===4)};if(t.includes("6 người")||t.includes("sáu người")||t.includes("nhóm đông")||t.includes("đoàn")||t.includes("công ty")||t.includes("nhiều người"))return{text:`Dạ với đoàn <strong>từ 6 người trở lên</strong>, quý khách có thể lựa chọn:<br/>
       • 👑 <strong>Presidential Sunset Penthouse (8.900.000₫/đêm):</strong> Diện tích 210m² với 3 phòng ngủ Master Suite, sức chứa 6 người lớn + 3 trẻ em, view 360 độ và quản gia 24/7.<br/>
       • 🏊 <strong>Đặt cụm Biệt Thự Villa Liền Kề:</strong> Các căn Villa sát biển có lối đi thông nhau rất thuận tiện.<br/>
-      Quý khách có thể liên hệ hotline <strong>0988.123.456</strong> để nhận báo giá ưu đãi đoàn tốt nhất ạ!`,cards:o.roomTypes.filter(s=>s.id===4||s.id===3)};if(t.includes("còn phòng")||t.includes("con phong")||t.includes("phòng trống")||t.includes("check phòng")||t.includes("tìm phòng")||t.includes("đặt phòng")||t.includes("có phòng nào"))return{text:`Dạ hiện tại AURA STAY đang có <strong>${o.rooms.filter(s=>s.status==="clean").length} phòng trống sạch</strong> sẵn sàng đón quý khách lưu trú, trải dài từ hạng Bungalow nhiệt đới đến Biệt thự hồ bơi sát biển.<br/>
+      Quý khách có thể liên hệ hotline <strong>0988.123.456</strong> để nhận báo giá ưu đãi đoàn tốt nhất ạ!`,cards:i.roomTypes.filter(s=>s.id===4||s.id===3)};if(t.includes("còn phòng")||t.includes("con phong")||t.includes("phòng trống")||t.includes("check phòng")||t.includes("tìm phòng")||t.includes("đặt phòng")||t.includes("có phòng nào"))return{text:`Dạ hiện tại AURA STAY đang có <strong>${i.rooms.filter(s=>s.status==="clean").length} phòng trống sạch</strong> sẵn sàng đón quý khách lưu trú, trải dài từ hạng Bungalow nhiệt đới đến Biệt thự hồ bơi sát biển.<br/>
       • Giá phòng dao động từ <strong>1.450.000₫</strong> đến <strong>8.900.000₫</strong>/đêm.<br/>
-      Quý khách dự định đi <strong>mấy người</strong> và vào <strong>khoảng ngày nào</strong> để em kiểm tra và tư vấn căn phòng đẹp nhất cho mình ạ?`,cards:o.roomTypes.slice(0,3)};if(t.includes("giá")||t.includes("gia")||t.includes("bao nhiêu")||t.includes("rẻ nhất")||t.includes("re nhat")||t.includes("bảng giá")||t.includes("bang gia")||t.includes("chi phí")||t.includes("tiết kiệm")){const a=[...o.roomTypes].sort((s,c)=>s.base_price-c.base_price);return{text:`Dạ bảng giá niêm yết các hạng phòng tại AURA STAY (đã gồm buffet sáng 5 sao) như sau ạ:<br/>
-      1. 🌿 <strong>Zen Tropical Garden Bungalow:</strong> ${o.formatPrice(a[0].base_price)}/đêm <em>(Giá tốt nhất)</em><br/>
-      2. 🌊 <strong>Deluxe Ocean View:</strong> ${o.formatPrice(a[1].base_price)}/đêm <em>(Bán chạy nhất)</em><br/>
-      3. 💖 <strong>Honeymoon Romantic Haven:</strong> ${o.formatPrice(a[2].base_price)}/đêm<br/>
-      4. 👑 <strong>Grand Executive Suite:</strong> ${o.formatPrice(a[3].base_price)}/đêm<br/>
-      5. 🏊 <strong>Beachfront Private Pool Villa:</strong> ${o.formatPrice(a[4].base_price)}/đêm<br/>
-      6. 🌇 <strong>Presidential Sunset Penthouse:</strong> ${o.formatPrice(a[5].base_price)}/đêm<br/>
-      <small style="color: var(--color-text-muted);">*Nhập mã <strong>AURASTAY2026</strong> khi đặt phòng để được giảm thêm 10% nữa nhé!*</small>`,cards:a.slice(0,3)}}if(t.includes("view biển")||t.includes("hướng biển")||t.includes("ngắm biển")||t.includes("bãi biển")||t.includes("view bien"))return{text:`Dạ AURA STAY tọa lạc ngay sát vịnh biển nên các hạng phòng sau đây sở hữu tầm nhìn biển trực diện tuyệt mỹ:<br/>
+      Quý khách dự định đi <strong>mấy người</strong> và vào <strong>khoảng ngày nào</strong> để em kiểm tra và tư vấn căn phòng đẹp nhất cho mình ạ?`,cards:i.roomTypes.slice(0,3)};if(t.includes("giá")||t.includes("gia")||t.includes("bao nhiêu")||t.includes("rẻ nhất")||t.includes("re nhat")||t.includes("bảng giá")||t.includes("bang gia")||t.includes("chi phí")||t.includes("tiết kiệm")){const r=[...i.roomTypes].sort((s,c)=>s.base_price-c.base_price);return{text:`Dạ bảng giá niêm yết các hạng phòng tại AURA STAY (đã gồm buffet sáng 5 sao) như sau ạ:<br/>
+      1. 🌿 <strong>Zen Tropical Garden Bungalow:</strong> ${i.formatPrice(r[0].base_price)}/đêm <em>(Giá tốt nhất)</em><br/>
+      2. 🌊 <strong>Deluxe Ocean View:</strong> ${i.formatPrice(r[1].base_price)}/đêm <em>(Bán chạy nhất)</em><br/>
+      3. 💖 <strong>Honeymoon Romantic Haven:</strong> ${i.formatPrice(r[2].base_price)}/đêm<br/>
+      4. 👑 <strong>Grand Executive Suite:</strong> ${i.formatPrice(r[3].base_price)}/đêm<br/>
+      5. 🏊 <strong>Beachfront Private Pool Villa:</strong> ${i.formatPrice(r[4].base_price)}/đêm<br/>
+      6. 🌇 <strong>Presidential Sunset Penthouse:</strong> ${i.formatPrice(r[5].base_price)}/đêm<br/>
+      <small style="color: var(--color-text-muted);">*Nhập mã <strong>AURASTAY2026</strong> khi đặt phòng để được giảm thêm 10% nữa nhé!*</small>`,cards:r.slice(0,3)}}if(t.includes("view biển")||t.includes("hướng biển")||t.includes("ngắm biển")||t.includes("bãi biển")||t.includes("view bien"))return{text:`Dạ AURA STAY tọa lạc ngay sát vịnh biển nên các hạng phòng sau đây sở hữu tầm nhìn biển trực diện tuyệt mỹ:<br/>
       • 🌊 <strong>Deluxe Ocean View (1.850.000₫):</strong> Ban công riêng đón gió biển và hoàng hôn rực rỡ.<br/>
       • 👑 <strong>Grand Executive Suite (2.950.000₫):</strong> Ban công kính panorama mở rộng 180 độ view biển.<br/>
       • 🏊 <strong>Beachfront Villa (5.600.000₫):</strong> Chỉ cách mép sóng vài bước chân trên bãi cát trắng.<br/>
-      Quý khách xem hình ảnh thực tế ở thẻ phòng bên dưới nhé:`,cards:o.roomTypes.filter(s=>s.tags.some(c=>c.includes("View Biển"))||s.id===1||s.id===2)};if(t.includes("hồ bơi")||t.includes("ho boi")||t.includes("bể bơi")||t.includes("villa")||t.includes("biệt thự"))return{text:`Dạ khu nghỉ dưỡng có 2 trải nghiệm hồ bơi độc đáo:<br/>
+      Quý khách xem hình ảnh thực tế ở thẻ phòng bên dưới nhé:`,cards:i.roomTypes.filter(s=>s.tags.some(c=>c.includes("View Biển"))||s.id===1||s.id===2)};if(t.includes("hồ bơi")||t.includes("ho boi")||t.includes("bể bơi")||t.includes("villa")||t.includes("biệt thự"))return{text:`Dạ khu nghỉ dưỡng có 2 trải nghiệm hồ bơi độc đáo:<br/>
       1. 🏊 <strong>Hồ bơi vô cực chung:</strong> Rộng 500m² view tràn biển, phục vụ cocktail và âm nhạc nhẹ nhàng bên hồ.<br/>
       2. 🏖️ <strong>Beachfront Private Pool Villa:</strong> Biệt thự riêng tư sở hữu <strong>hồ bơi vô cực riêng</strong> ngay trước thềm phòng ngủ, cực kỳ sang trọng và kín đáo!<br/>
-      Quý khách có thể bấm <strong>"Đặt Ngay"</strong> để nhận ưu đãi villa hôm nay:`,cards:o.roomTypes.filter(s=>s.id===3||s.id===2)};if(t.includes("check-in")||t.includes("checkin")||t.includes("nhận phòng")||t.includes("nhan phong")||t.includes("trả phòng")||t.includes("tra phong")||t.includes("checkout")||t.includes("mấy giờ"))return{text:`Dạ quy định giờ nhận và trả phòng tại <strong>AURA STAY Resort</strong> như sau ạ:<br/>
+      Quý khách có thể bấm <strong>"Đặt Ngay"</strong> để nhận ưu đãi villa hôm nay:`,cards:i.roomTypes.filter(s=>s.id===3||s.id===2)};if(t.includes("check-in")||t.includes("checkin")||t.includes("nhận phòng")||t.includes("nhan phong")||t.includes("trả phòng")||t.includes("tra phong")||t.includes("checkout")||t.includes("mấy giờ"))return{text:`Dạ quy định giờ nhận và trả phòng tại <strong>AURA STAY Resort</strong> như sau ạ:<br/>
       • ⏰ <strong>Giờ nhận phòng (Check-in):</strong> từ <strong>14:00</strong> chiều.<br/>
       • ⏰ <strong>Giờ trả phòng (Check-out):</strong> trước <strong>12:00</strong> trưa.<br/>
       • <em>Nhận phòng sớm / Trả phòng trễ:</em> Resort sẽ hỗ trợ linh hoạt miễn phí nếu có phòng trống sẵn sàng. Quý khách chỉ cần ghi chú trong đơn đặt phòng để lễ tân sắp xếp chu đáo ạ!`};if(t.includes("sân bay")||t.includes("san bay")||t.includes("đưa đón")||t.includes("dua don")||t.includes("xe đón"))return{text:`Dạ resort cách sân bay quốc tế chỉ khoảng 15 phút di chuyển và có chính sách đón tiễn như sau ạ:<br/>
@@ -1116,7 +1117,7 @@
       • Giường ngủ rải cánh hoa hồng nhung và thiên nga uyên ương.<br/>
       • 1 chai rượu vang Chile ướp lạnh và đĩa hoa quả tươi chào mừng.<br/>
       • Bữa tối lãng mạn dưới ánh nến tại ban công riêng view biển đêm.<br/>
-      Quý khách tham khảo ngay thẻ phòng bên dưới nhé:`,cards:o.roomTypes.filter(s=>s.id===6||s.id===1)};if(t.includes("hủy")||t.includes("huy")||t.includes("đổi ngày")||t.includes("doi ngay")||t.includes("hoàn tiền"))return{text:`Dạ chính sách hủy đổi tại AURA STAY rất linh hoạt để đảm bảo quyền lợi tốt nhất cho quý khách:<br/>
+      Quý khách tham khảo ngay thẻ phòng bên dưới nhé:`,cards:i.roomTypes.filter(s=>s.id===6||s.id===1)};if(t.includes("hủy")||t.includes("huy")||t.includes("đổi ngày")||t.includes("doi ngay")||t.includes("hoàn tiền"))return{text:`Dạ chính sách hủy đổi tại AURA STAY rất linh hoạt để đảm bảo quyền lợi tốt nhất cho quý khách:<br/>
       • <strong>Miễn phí 100%:</strong> Quý khách được hủy hoặc đổi ngày miễn phí nếu thông báo trước 48 giờ so với ngày nhận phòng.<br/>
       • Nếu đơn đặt phòng của quý khách đang ở trạng thái <em>Pending (Chờ xác nhận)</em>, quý khách có thể tự thao tác hủy trực tiếp trong mục Tra Cứu Booking hoặc gọi lễ tân hỗ trợ ngay ạ!`};if(t.includes("ở đâu")||t.includes("địa chỉ")||t.includes("dia chi")||t.includes("vị trí")||t.includes("hotline")||t.includes("số điện thoại")||t.includes("sđt")||t.includes("liên hệ"))return{text:`Dạ thông tin liên hệ của khu nghỉ dưỡng <strong>AURA STAY Resort</strong>:<br/>
       • 📍 <strong>Địa chỉ:</strong> Đại lộ Bãi Dài, Bán đảo Cam Ranh, Khánh Hòa.<br/>
@@ -1127,10 +1128,10 @@
       2️⃣ Báo giá ưu đãi các hạng phòng (từ <strong>1.450.000₫</strong>/đêm)<br/>
       3️⃣ Tư vấn giờ check-in, buffet sáng, xe đưa đón sân bay<br/>
       4️⃣ Tra cứu thông tin đơn đặt phòng theo mã hoặc SĐT<br/>
-      Quý khách đang quan tâm đến nội dung nào để em hỗ trợ chu đáo nhất ạ?`};const r=o.roomTypes.filter(a=>a.name.toLowerCase().includes(t)||a.short_description.toLowerCase().includes(t)||a.tags.some(s=>s.toLowerCase().includes(t)));return r.length>0?{text:`Dạ em tìm thấy các hạng phòng phù hợp với yêu cầu "<strong>${n}</strong>" của quý khách:`,cards:r}:{text:`Dạ em đã ghi nhận thắc mắc của quý khách về: <em>"${n}"</em>.<br/>
+      Quý khách đang quan tâm đến nội dung nào để em hỗ trợ chu đáo nhất ạ?`};const a=i.roomTypes.filter(r=>r.name.toLowerCase().includes(t)||r.short_description.toLowerCase().includes(t)||r.tags.some(s=>s.toLowerCase().includes(t)));return a.length>0?{text:`Dạ em tìm thấy các hạng phòng phù hợp với yêu cầu "<strong>${n}</strong>" của quý khách:`,cards:a}:{text:`Dạ em đã ghi nhận thắc mắc của quý khách về: <em>"${n}"</em>.<br/>
     Để em tư vấn chính xác và nhanh nhất, quý khách có thể cho em biết thêm:<br/>
     • Quý khách dự định đi <strong>bao nhiêu người</strong> (ví dụ: <em>2 người</em>, <em>gia đình 4 người</em>)?<br/>
-    • Hoặc quý khách muốn xem <strong>bảng giá</strong>, <strong>phòng view biển</strong> hay <strong>villa có hồ bơi riêng</strong> ạ?`}}function bt(){const n=document.getElementById("chatbot-toggle");n&&(n.onclick=()=>{$=!$;const i=document.getElementById("chatbot-window");i&&($?i.classList.add("open"):i.classList.remove("open"))});const t=document.getElementById("chatbot-close");t&&(t.onclick=()=>{$=!1;const i=document.getElementById("chatbot-window");i&&i.classList.remove("open")});const e=document.getElementById("chatbot-form");e&&(e.onsubmit=i=>{i.preventDefault();const r=document.getElementById("chatbot-input"),a=r?r.value.trim():"";a&&(y.push({sender:"user",text:a}),r.value="",setTimeout(()=>{const s=N(a);y.push({sender:"bot",text:s.text,cards:s.cards}),T()},500),T())}),document.querySelectorAll(".chip-btn[data-msg]").forEach(i=>{i.onclick=()=>{const r=i.dataset.msg;y.push({sender:"user",text:r}),setTimeout(()=>{const a=N(r);y.push({sender:"bot",text:a.text,cards:a.cards}),T()},400),T()}}),M()}function T(){const n=document.getElementById("chatbot-messages-box");n&&(n.innerHTML=`
+    • Hoặc quý khách muốn xem <strong>bảng giá</strong>, <strong>phòng view biển</strong> hay <strong>villa có hồ bơi riêng</strong> ạ?`}}function kt(){const n=document.getElementById("chatbot-toggle");n&&(n.onclick=()=>{$=!$;const o=document.getElementById("chatbot-window");o&&($?o.classList.add("open"):o.classList.remove("open"))});const t=document.getElementById("chatbot-close");t&&(t.onclick=()=>{$=!1;const o=document.getElementById("chatbot-window");o&&o.classList.remove("open")});const e=document.getElementById("chatbot-form");e&&(e.onsubmit=o=>{o.preventDefault();const a=document.getElementById("chatbot-input"),r=a?a.value.trim():"";r&&(y.push({sender:"user",text:r}),a.value="",setTimeout(()=>{const s=N(r);y.push({sender:"bot",text:s.text,cards:s.cards}),T()},500),T())}),document.querySelectorAll(".chip-btn[data-msg]").forEach(o=>{o.onclick=()=>{const a=o.dataset.msg;y.push({sender:"user",text:a}),setTimeout(()=>{const r=N(a);y.push({sender:"bot",text:r.text,cards:r.cards}),T()},400),T()}}),M()}function T(){const n=document.getElementById("chatbot-messages-box");n&&(n.innerHTML=`
     ${y.map(t=>`
       <div class="chat-bubble ${t.sender}">
         <div>${t.text}</div>
@@ -1145,7 +1146,7 @@
       <button class="chip-btn" data-msg="Quy định giờ check-in và check-out?">⏰ Giờ Check-in</button>
       <button class="chip-btn" data-msg="Tra cứu đơn AUR-260324-1001">🔍 Tra Cứu Booking</button>
     </div>
-  `,n.scrollTop=n.scrollHeight,document.querySelectorAll(".chip-btn[data-msg]").forEach(t=>{t.onclick=()=>{const e=t.dataset.msg;y.push({sender:"user",text:e}),setTimeout(()=>{const i=N(e);y.push({sender:"bot",text:i.text,cards:i.cards}),T()},400),T()}}),M())}function M(){document.querySelectorAll(".btn-chat-book").forEach(n=>{n.onclick=()=>{const t=Number(n.dataset.id),e=o.roomTypes.find(i=>i.id===t);e&&o.openModal("booking",e)}})}function yt(){return`
+  `,n.scrollTop=n.scrollHeight,document.querySelectorAll(".chip-btn[data-msg]").forEach(t=>{t.onclick=()=>{const e=t.dataset.msg;y.push({sender:"user",text:e}),setTimeout(()=>{const o=N(e);y.push({sender:"bot",text:o.text,cards:o.cards}),T()},400),T()}}),M())}function M(){document.querySelectorAll(".btn-chat-book").forEach(n=>{n.onclick=()=>{const t=Number(n.dataset.id),e=i.roomTypes.find(o=>o.id===t);e&&i.openModal("booking",e)}})}function _t(){return`
     <footer class="footer" id="footer-section">
       <div class="container">
         <div class="footer-grid">
@@ -1201,26 +1202,26 @@
         </div>
       </div>
     </footer>
-  `}function q(){const n=document.getElementById("app");if(!n)return;const t=o.activeRole==="guest";n.innerHTML=`
-    ${Y()}
+  `}function q(){const n=document.getElementById("app");if(!n)return;const t=i.activeRole==="guest";n.innerHTML=`
+    ${X()}
     
     <main>
       ${t?`
-        ${F()}
-        ${J()}
         ${Z()}
+        ${nt()}
+        ${ot()}
       `:`
-        ${ct()}
+        ${gt()}
       `}
     </main>
 
-    ${yt()}
+    ${_t()}
 
     <!-- Modals -->
-    ${tt()}
-    ${et()}
+    ${it()}
     ${rt()}
+    ${dt()}
 
     <!-- AI Concierge Chatbot Widget (luôn hiển thị thường trực) -->
-    ${vt()}
-  `,j(),t?(X(),W()):pt(),nt(),at(),st(),bt()}o.subscribe(()=>{q()});q();console.log("🌟 AURA STAY Resort & Hotel Web Application Initialized Successfully!");
+    ${xt()}
+  `,W(),t?(tt(),et()):ft(),at(),lt(),ht(),kt()}i.subscribe(()=>{q()});q();console.log("🌟 AURA STAY Resort & Hotel Web Application Initialized Successfully!");J();
